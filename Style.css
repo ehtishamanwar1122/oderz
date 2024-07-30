@@ -1,0 +1,31 @@
+.commision h3 {
+    font-family: Poppins;
+    font-size: 50px;
+    font-weight: 700;
+    line-height: 75px;
+    letter-spacing: 0px;
+    text-align: center;
+    color: #C5FF60;
+}
+.data p{
+    font-family: Inter;
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 36px;
+    letter-spacing: 0px;
+    text-align: center;
+    color: #fff;
+    padding-bottom: 30px;
+}
+.commision {
+    display: inline-block;
+    width: 100%;
+    margin-bottom: 50px;
+    background: #323232;
+    padding: 45px 10px;
+}
+.btn
+{
+    text-align: center;
+    color: #fff;
+}
