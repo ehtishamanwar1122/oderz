@@ -1,0 +1,498 @@
+
+body {
+    margin: 0;
+    font-family: "Poppins", sans-serif;
+}
+
+.container {    
+    margin: 0;
+    padding: 0;
+}
+
+.header {
+    background-color: #000000;
+    padding: 8px;
+    text-align: center;
+    color: #ffffff;
+    height: 8px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1000; 
+}
+
+
+.header h5 {
+    margin: 0;
+    font-size: 12px;
+}
+.header h5 a{
+    color: inherit;
+    text-decoration: none;
+}
+.nav-bar {
+    height: 10vh;
+    width: 100%;
+    background-color: rgb(197, 255, 96);
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 1%;
+    padding-top: 10px;
+    font-family: fantasy;
+}
+
+.nav-logo {
+    height: 100%;
+    width: 25%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.nav-logo img {
+    max-height: 80%;
+    max-width: 80%;
+}
+
+.hyper-links {
+    flex-grow: 1;
+    display: flex;
+    justify-content: center;
+    font-size: 20px;
+    
+    }
+
+.hyper-links nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 20px;
+}
+
+.hyper-links nav ul li {
+    display: inline;
+}
+
+.hyper-links nav ul li a {
+    text-decoration: none;
+    color: #000000;
+    padding: 14px 16px;
+}
+
+.hyper-links nav ul li a:hover {
+   
+    color: black;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown:hover .dropbtn {
+    background-color: #ddd;
+    color: black;
+}
+
+.log-buttons {
+    width: 25%;
+}
+.log-buttons button {
+    padding: 10px 20px;
+    border-radius: 5px;    
+    color: #000;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+}
+.log-buttons .btn1{
+    background-color:  rgb(197, 255, 96);
+    border: 1px solid black;
+}
+.log-buttons .btn2{
+    color:  rgb(197, 255, 96);
+    background-color:  black;
+}
+.menu-button {
+    display: none;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+@media (max-width: 768px) {
+    .nav-bar {
+        
+        margin-top: 2%;
+    }
+    .nav-logo {
+        
+        align-items: center;
+        
+    }
+
+    .hyper-links {
+        display: none;
+    }
+    .log-buttons{
+        width: 90%;
+        display: flex;
+        justify-content: flex-end;
+    }
+    .log-buttons .btn2 {
+        display: none;
+    }
+    
+    .menu-button {
+        display: block;
+        font-size: 2em;
+    }
+
+    .nav-bar:hover .hyper-links {
+        display: flex;
+        position: absolute;
+        top: 15vh;
+        left: 0;
+        width: 100%;
+        background-color: rgb(197, 255, 96);
+        flex-direction: column;
+        align-items: center;
+    }
+
+
+    .nav-bar:hover .hyper-links nav ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+    .nav-bar:hover .hyper-links nav ul li a:hover{
+        color: #a19898;
+    }
+    .nav-bar::after {
+        content: "";
+        display: block;
+        width: 100%;
+        height: 2px;
+        background-color: black;
+        position: absolute;
+        bottom: 456px; 
+       
+    }
+    .hero{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        
+    }
+    
+
+}
+
+/* Hero */
+.hero {
+    width: 100%;
+    height: 600px;
+    background-color: rgb(197, 255, 96);
+    display: flex;
+}
+
+.content {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 20px;
+}
+
+.content h1 {
+    margin: 0;
+    font-size: 72px;
+    font-weight: bolder;
+    
+}
+
+.content p {
+    font-size: 18px;
+    margin: 10px 0;
+}
+
+.content button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #000000d0;
+    color: #ffffff;
+    cursor: pointer;
+    font-size: 16px;
+    width: 33%;
+}
+
+
+.images {
+    width: 50%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 30px;
+}
+
+.images img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: cover;
+}
+.logos {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 0;
+    background-color: rgb(197, 255, 96);
+}
+
+.logos ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    gap: 50px; 
+   
+}
+
+.logos li {
+    display: inline-block;
+    
+}
+
+.logos img {
+    max-width: 100px;
+    max-height: 150px;
+    object-fit: contain;
+}
+
+
+/* below hero */
+.below-hero {
+    width: 100%;
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    /* padding: 40px 20px;  */
+    background-color: #ffffff; 
+}
+
+.heading {
+    width: 800px; 
+}
+
+.heading h1 {
+    margin: 0;
+    font-size: 72px;
+    font-weight: bold;
+    color: #000; 
+}
+
+.heading p {
+    
+    width: 600px;
+    font-size: 24px; 
+    color: #000000aa;
+    margin: 10px 0 0 70px;
+}
+
+/* cards  */
+.cards, .card2 {
+    display: flex;
+    width: 100%;
+    margin-top: 40px ;
+}
+
+.image-section {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.image-section img {
+    max-width: 100%;
+    height: 400px;
+}
+
+.content {
+    width: 50%;
+    padding: 20px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+}
+
+.content h1, .content h2, .content p {
+    margin: 0 0 15px;
+    
+}
+
+.content ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap; 
+    gap: 10px; 
+}
+
+.content ul li {
+    display: flex;
+    align-items: center;
+    position: relative;
+    padding-left: 25px;
+    margin-bottom: 10px;
+    line-height: 1.5;
+    font-size: 1em; 
+}
+
+.content ul li::before {
+    content: "✔";
+    position: absolute;
+    left: 0;
+    color: green;
+    line-height: 1;
+}
+
+
+.content a {
+    color: #000000;
+    font-weight: bold;
+    font-size: 1em; 
+}
+.content h1 {
+    font-size: em; 
+    font-weight: 700px;
+}
+
+.content h2 {
+    font-size: 1.3em; 
+}
+
+.content p {
+    font-size: 0.1em; 
+}
+
+
+
+
+
+
+
+/* responsive  */
+@media (max-width: 1200px) {
+    .content h1 {
+        font-size: 60px;
+    }
+
+    .content p {
+        font-size: 16px;
+    }
+
+    .content button {
+        font-size: 14px;
+        width: 50%;
+    }
+}
+
+@media (max-width: 992px) {
+    .content {
+        width: 75%;
+    }
+
+    .content h1 {
+        font-size: 48px;
+    }
+
+    .content p {
+        font-size: 14px;
+    }
+
+    .content button {
+        font-size: 12px;
+        width: 75%;
+    }
+}
+
+@media (max-width: 768px) {
+    .content {
+        width: 90%;
+    }
+
+    .content h1 {
+        font-size: 36px;
+    }
+
+    .content p {
+        font-size: 12px;
+    }
+
+    .content button {
+        font-size: 10px;
+        width: 100%;
+    }
+}
+
+@media (max-width: 576px) {
+    .content {
+        width: 100%;
+        padding: 70px;
+        display: flex;
+        justify-content: center;
+    }
+
+    .content h1 {
+        
+        font-size: 46px;
+       
+    }
+
+    .content p {
+        font-size: 22px;
+    }
+
+    .content button {
+        font-size: 18px;
+        width: 50%;
+        display: flex;
+            justify-content: center;
+            align-items: center;
+    }
+}
+
+
