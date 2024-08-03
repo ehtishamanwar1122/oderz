@@ -1,7 +1,7 @@
 
 body {
     margin: 0;
-    font-family: "Poppins", sans-serif;
+    font-family: "Poppins", sans-serif !important;
 }
 
 .container {    
@@ -32,7 +32,7 @@ body {
     text-decoration: none;
 }
 .nav-bar {
-    height: 10vh;
+    height: 15vh;
     width: 100%;
     background-color: rgb(197, 255, 96);
     overflow: hidden;
@@ -61,8 +61,9 @@ body {
     flex-grow: 1;
     display: flex;
     justify-content: center;
-    font-size: 20px;
-    
+    font-size: 16px;
+    font-family: "Poppins";
+    font-weight: 700;
     }
 
 .hyper-links nav ul {
@@ -84,43 +85,29 @@ body {
 }
 
 .hyper-links nav ul li a:hover {
-   
-    color: black;
+       color: black;
 }
-
-.dropdown {
-    position: relative;
-    display: inline-block;
+.hyper-links nav ul li ul.dropdown li{
+    display: block;
 }
-
-.dropdown-content {
-    display: none;
+.hyper-links nav ul li ul.dropdown{
+    width: auto;
+    height: auto;
+    background: #ffffff;
     position: absolute;
-    background-color: #f9f9f9;
-    min-width: 160px;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    z-index: 1;
+    z-index: 999;
+    display: none;
+    color: #000;
+    font-size: 16px;
+    margin-top: 2%;
+    border-radius: 10px;
+    box-shadow: #000;
+    font-family: 'Times New Roman', Times, serif;
+    padding: 4px;
 }
-
-.dropdown-content a {
-    color: black;
-    padding: 12px 16px;
-    text-decoration: none;
-    display: block;
-    text-align: left;
-}
-
-
-
-.dropdown:hover .dropdown-content {
+.hyper-links nav ul li:hover ul.dropdown{
     display: block;
 }
-
-.dropdown:hover .dropbtn {
-    background-color: #ddd;
-    color: black;
-}
-
 .log-buttons {
     width: 25%;
 }
@@ -221,27 +208,29 @@ body {
     display: flex;
 }
 
-.content {
+.hero .content {
     width: 50%;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    padding: 20px;
+    padding: 30px;
+    height: 100%;
 }
 
-.content h1 {
+.hero .content h1 {
     margin: 0;
-    font-size: 72px;
+    font-size: 36px;
     font-weight: bolder;
     
 }
 
-.content p {
+.hero .content p {
     font-size: 18px;
-    margin: 10px 0;
+    margin: 10px 0 10px 0; 
+    
 }
 
-.content button {
+.hero .content button {
     padding: 10px 20px;
     border: none;
     border-radius: 5px;
@@ -253,7 +242,7 @@ body {
 }
 
 
-.images {
+.hero .images {
     width: 50%;
     display: flex;
     justify-content: space-around;
@@ -261,11 +250,86 @@ body {
     margin-top: 30px;
 }
 
-.images img {
+.hero .images img {
     max-width: 100%;
     max-height: 100%;
     object-fit: cover;
 }
+
+/* responsive  */
+/* Responsive CSS */
+@media (max-width: 768px) {
+    .menu-button {
+        display: block; 
+        padding: 10px;
+    }
+
+    .nav-logo {
+        display: none; 
+    }
+
+    .hyper-links {
+        display: none; 
+        flex-direction: column;
+        background-color: rgb(197, 255, 96); 
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        z-index: 1;
+    }
+
+    .hyper-links nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .hyper-links nav ul li {
+        width: 100%;
+        text-align: center;
+    }
+
+    .hyper-links nav ul li a {
+        padding: 14px 16px;
+        display: block;
+        width: 100%;
+    }
+
+    .hyper-links .dropdown-content {
+        position: static; 
+        box-shadow: none;
+        background-color: rgb(197, 255, 96);
+    }
+
+    .hyper-links .dropdown-content a {
+        padding: 12px 16px;
+    }
+
+    .hyper-links .dropdown:hover .dropdown-content {
+        display: block; 
+    }
+
+    .log-buttons {
+        display: none; 
+    }
+
+    .menu-button:hover + .hyper-links,
+    .menu-button:focus + .hyper-links {
+        display: flex; 
+    }
+}
+
+@media (max-width: 576px) {
+    .hyper-links nav ul li a {
+        padding: 10px 12px; 
+    }
+
+    .hyper-links .dropdown-content a {
+        padding: 10px 12px;
+    }
+}
+
+/* logos below */
 .logos {
     width: 100%;
     height: auto;
@@ -282,12 +346,10 @@ body {
     margin: 0;
     display: flex;
     gap: 50px; 
-   
 }
 
 .logos li {
     display: inline-block;
-    
 }
 
 .logos img {
@@ -296,16 +358,65 @@ body {
     object-fit: contain;
 }
 
+/* Responsive CSS */
+@media (max-width: 1200px) {
+    .logos ul {
+        gap: 40px;
+    }
+
+    .logos img {
+        max-width: 90px;
+        max-height: 135px;
+    }
+}
+
+@media (max-width: 992px) {
+    .logos ul {
+        gap: 30px;
+    }
+
+    .logos img {
+        max-width: 80px;
+        max-height: 120px;
+    }
+}
+
+@media (max-width: 768px) {
+    .logos ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .logos li {
+        margin-bottom: 20px;
+    }
+
+    .logos img {
+        max-width: 70px;
+        max-height: 105px;
+    }
+}
+
+@media (max-width: 576px) {
+    .logos ul {
+        gap: 20px;
+    }
+
+    .logos img {
+        max-width: 60px;
+        max-height: 90px;
+    }
+}
+
 
 /* below hero */
 .below-hero {
     width: 100%;
-    height: 80vh;
+    height: 40vh;
     display: flex;
     justify-content: center;
     align-items: center;
     text-align: center;
-    /* padding: 40px 20px;  */
     background-color: #ffffff; 
 }
 
@@ -315,25 +426,138 @@ body {
 
 .heading h1 {
     margin: 0;
-    font-size: 72px;
+    font-size: 36px;
     font-weight: bold;
     color: #000; 
 }
 
 .heading p {
-    
     width: 600px;
     font-size: 24px; 
     color: #000000aa;
     margin: 10px 0 0 70px;
 }
 
+/* Responsive CSS */
+@media (max-width: 1200px) {
+    .heading {
+        width: 700px; 
+    }
+
+    .heading h1 {
+        font-size: 32px;
+    }
+
+    .heading p {
+        width: 550px;
+        font-size: 22px;
+        margin: 10px 0 0 60px;
+    }
+}
+
+@media (max-width: 992px) {
+    .heading {
+        width: 600px; 
+    }
+
+    .heading h1 {
+        font-size: 28px;
+    }
+
+    .heading p {
+        width: 500px;
+        font-size: 20px;
+        margin: 10px 0 0 50px;
+    }
+}
+
+@media (max-width: 768px) {
+    .below-hero {
+        height: auto;
+        padding: 40px 20px;
+    }
+
+    .heading {
+        width: 90%;
+    }
+
+    .heading h1 {
+        font-size: 24px;
+    }
+
+    .heading p {
+        width: 100%;
+        font-size: 18px;
+        margin: 10px auto 0 auto;
+    }
+}
+
+@media (max-width: 576px) {
+    .heading h1 {
+        font-size: 20px;
+    }
+
+    .heading p {
+        font-size: 16px;
+        margin: 10px auto 0 auto;
+    }
+}
+
+
 /* cards  */
-.cards, .card2 {
+.cards, 
+.card2 {
     display: flex;
     width: 100%;
-    margin-top: 40px ;
+    margin-top: 40px;
 }
+
+.cards, 
+.card2 {
+    .content h1{
+        font-size: 1.4em;
+    } 
+    .content h2, 
+    .content p {
+        margin: 0 0 15px;
+        font-size: 1em !important;
+        text-align: left;
+    }
+
+    .content ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+
+    .content ul li {
+        display: flex;
+        align-items: center;
+        position: relative;
+        padding-left: 25px;
+        margin-bottom: 10px;
+        line-height: 1.5;
+        font-size: 1em;
+    }
+
+    .content ul li::before {
+        content: "✔";
+        position: absolute;
+        left: 0;
+        color: green;
+        line-height: 1;
+    }
+
+    .content a {
+        color: #000000;
+        font-weight: bold;
+        font-size: 1em;
+    }
+}
+
 
 .image-section {
     width: 50%;
@@ -354,144 +578,85 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    
 }
 
-.content h1, .content h2, .content p {
+#content h1, #content h2, #content p {
     margin: 0 0 15px;
-    
+    font-size: 1.5em !important;
+    text-align: justify;
 }
 
-.content ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-    display: flex;
-    flex-wrap: wrap; 
-    gap: 10px; 
-}
-
-.content ul li {
-    display: flex;
-    align-items: center;
-    position: relative;
-    padding-left: 25px;
-    margin-bottom: 10px;
-    line-height: 1.5;
-    font-size: 1em; 
-}
-
-.content ul li::before {
-    content: "✔";
-    position: absolute;
-    left: 0;
-    color: green;
-    line-height: 1;
-}
-
-
-.content a {
-    color: #000000;
-    font-weight: bold;
-    font-size: 1em; 
-}
-.content h1 {
-    font-size: em; 
-    font-weight: 700px;
-}
-
-.content h2 {
-    font-size: 1.3em; 
-}
-
-.content p {
-    font-size: 0.1em; 
-}
-
-
-
-
-
-
-
-/* responsive  */
+/* Responsive CSS */
 @media (max-width: 1200px) {
     .content h1 {
-        font-size: 60px;
+        font-size: 1.4em;
     }
 
     .content p {
-        font-size: 16px;
+        font-size: 1.2em;
     }
 
     .content button {
-        font-size: 14px;
-        width: 50%;
+        font-size: 0.9em;
+        width: 75%;
     }
 }
 
 @media (max-width: 992px) {
-    .content {
-        width: 75%;
+    .cards, .card2 {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .image-section, .content {
+        width: 100%;
     }
 
     .content h1 {
-        font-size: 48px;
+        font-size: 1.2em;
     }
 
     .content p {
-        font-size: 14px;
+        font-size: 1em;
     }
 
     .content button {
-        font-size: 12px;
-        width: 75%;
+        font-size: 0.8em;
+        width: 90%;
     }
 }
 
 @media (max-width: 768px) {
-    .content {
-        width: 90%;
-    }
-
     .content h1 {
-        font-size: 36px;
+        font-size: 1.1em;
     }
 
     .content p {
-        font-size: 12px;
+        font-size: 0.9em;
     }
 
     .content button {
-        font-size: 10px;
+        font-size: 0.7em;
         width: 100%;
     }
 }
 
 @media (max-width: 576px) {
-    .content {
-        width: 100%;
-        padding: 70px;
-        display: flex;
-        justify-content: center;
+    .image-section img {
+        height: auto;
     }
 
     .content h1 {
-        
-        font-size: 46px;
-       
+        font-size: 1em;
     }
 
     .content p {
-        font-size: 22px;
+        font-size: 0.8em;
     }
 
     .content button {
-        font-size: 18px;
-        width: 50%;
-        display: flex;
-            justify-content: center;
-            align-items: center;
+        font-size: 0.6em;
+        width: 100%;
     }
 }
 

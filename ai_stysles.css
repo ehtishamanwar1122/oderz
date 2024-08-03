@@ -1,0 +1,280 @@
+*{
+    font-family:   "Poppins", sans-serif !important;
+}
+
+Hero {
+    width: 100%;
+    display: flex;
+    height: 200px;
+    justify-content: center;
+    align-items: center; 
+    text-align: center; 
+    background-color: rgb(197, 255, 96);; 
+    padding: 50px 0; 
+}
+
+Hero .container {
+    max-width: 80%; 
+    width: 100%;
+    padding: 0 20px; 
+    box-sizing: border-box;
+    h5 {
+        font-size: 1.5em; 
+        font-weight: ;
+        margin: 0%;
+    } 
+    h1 {
+        font-size: 3em; 
+        font-weight:1000;
+        margin: 0%;
+    }  
+    p{
+        font-size: 1.2em; 
+        margin: 1%;
+    }
+} 
+@media (max-width: 1200px) {
+    Hero .container h1 {
+        font-size: 2.5em;
+    }
+
+    Hero .container h5 {
+        font-size: 1.3em;
+    }
+
+    Hero .container p {
+        font-size: 1.1em;
+    }
+}
+
+@media (max-width: 992px) {
+    Hero {
+        height: 180px;
+    }
+
+    Hero .container h1 {
+        font-size: 2em;
+    }
+
+    Hero .container h5 {
+        font-size: 1.2em;
+    }
+
+    Hero .container p {
+        font-size: 1em;
+    }
+}
+
+@media (max-width: 768px) {
+    Hero {
+        height: 160px;
+    }
+
+    Hero .container h1 {
+        font-size: 1.8em;
+    }
+
+    Hero .container h5 {
+        font-size: 1.1em;
+    }
+
+    Hero .container p {
+        font-size: 0.9em;
+    }
+}
+
+@media (max-width: 576px) {
+    Hero {
+        height: 140px;
+        padding: 20px 0;
+    }
+
+    Hero .container h1 {
+        font-size: 1.5em;
+    }
+
+    Hero .container h5 {
+        font-size: 1em;
+    }
+
+    Hero .container p {
+        font-size: 0.8em;
+    }
+}
+/* video */
+.fcontainer {
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+    padding: 20px; 
+    height: 100vh; 
+    box-sizing: border-box;
+}
+
+iframe {
+    max-width: 100%;
+    max-height: 100%;
+    width: 1140px;
+    height: 650px;
+    border: none; 
+    border-radius: 10px;
+}
+
+/* Responsive CSS */
+@media (max-width: 1200px) {
+    .fcontainer {
+        padding: 15px;
+    }
+
+    iframe {
+        width: 90%;
+        height: 550px;
+    }
+}
+
+@media (max-width: 992px) {
+    .fcontainer {
+        padding: 10px;
+    }
+
+    iframe {
+        width: 80%;
+        height: 450px;
+    }
+}
+
+@media (max-width: 768px) {
+    .fcontainer {
+        padding: 5px;
+    }
+
+    iframe {
+        width: 70%;
+        height: 350px;
+    }
+}
+
+@media (max-width: 576px) {
+    .fcontainer {
+        padding: 0;
+    }
+
+    iframe {
+        width: 100%;
+        height: 250px;
+    }
+}
+/* Details */
+.Details {
+    max-width: 100%;
+    height: 100vh;
+    background-color: #fff;
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.Details .container {
+    margin: 0 auto;
+    width: 100%;
+}
+
+.Details .container button {
+    margin-left: 37%;
+    width: 300px;
+    height: 40px;
+    background-color: black;
+    color: rgb(197, 255, 96);
+    font-weight: bold;
+    border-radius: 5px;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+.Details .container .heading {
+    max-width: 50%;
+    font-size: 2.5em;
+    text-align: center;
+    margin: 5px auto 0 auto;
+    padding: 40px 0 0 0;
+    width: fit-content;
+}
+
+.Details .container .cards {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.Details .container .card {
+    padding: 20px;
+    width: 32%;
+    border-radius: 10px;
+    box-sizing: border-box;
+}
+
+.Details .container .card h1 {
+    font-weight: bold;
+    margin-bottom: 10px;
+    padding-left: 10px;
+}
+
+.Details .container .card p {
+    color: #666;
+    text-align: justify;
+    padding-left: 10px; 
+}
+
+/* Responsive CSS */
+@media (max-width: 1024px) {
+    .Details .container .heading {
+        font-size: 2em;
+        max-width: 70%;
+    }
+
+    .Details .container button {
+        margin-left: 25%;
+        width: 250px;
+    }
+}
+
+@media (max-width: 768px) {
+    .Details .container .heading {
+        font-size: 1.8em;
+        max-width: 90%;
+    }
+
+    .Details .container button {
+        margin-left: 20%;
+        width: 200px;
+    }
+
+    .Details .container .cards {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .Details .container .card {
+        width: 80%;
+        margin-bottom: 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    .Details .container .heading {
+        font-size: 1.5em;
+        max-width: 100%;
+    }
+
+    .Details .container button {
+        margin-left: 10%;
+        width: 150px;
+        font-size: 14px;
+    }
+
+    .Details .container .card {
+        width: 90%;
+        padding: 15px;
+    }
+}
