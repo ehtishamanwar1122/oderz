@@ -715,4 +715,213 @@ body {
     }
 }
 
+/* Integration Hero Section */
+.integeration_hero {
+    height: 200vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    box-sizing: border-box;
+    text-align: center;
+    background-color: rgb(197, 255, 96);
+}
 
+.integeration_hero .content {
+    width: 70%;
+    align-self: center;
+ 
+}
+
+.integeration_hero .content h1 {
+    font-size: 55px;
+    margin-bottom: 20px;
+    padding-top: 50px;
+}
+
+.integeration_hero .content p {
+    font-size: 20px;
+    margin-top: -15px;
+    margin-bottom: 20px;
+}
+
+.integeration_hero .content label {
+    display: block;
+    margin-bottom: 5px;
+    font-size: 14px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-left: 10%;
+    margin-top: 5%;
+}
+
+.integeration_hero .content input[type="text"] {
+    width: 100%;
+    max-width: 570px;
+    padding: 13px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 15px;
+    margin-left: 10%;
+}
+
+.integeration_hero .content p:last-of-type {
+    font-size: 14px;
+    margin-top: 20px;
+    margin-left: 10%;
+    line-height: 1.6;
+    width: 80%;
+    text-align: justify;
+}
+
+.integeration_hero .content img {
+    width: 30%;
+    height: auto;
+    margin: 2%;
+    margin-left: 10%;
+}
+
+.integeration_hero .content button {
+    background-color: #ff7a59;
+    color: white;
+    border: none;
+    padding: 10px;
+    width: 15%;
+    border-radius: 15px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+    margin-left: 10%;
+}
+
+.integeration_hero .content button:hover {
+    background-color: #ff7a597a;
+}
+
+.integeration_hero .lower_portion {
+    display: flex;
+    flex-direction: column;
+    padding-bottom: -100%;
+}
+
+.integeration_hero .lower_portion a {
+    color: #ff7a59;
+}
+.integeration_hero .lower_portion a:hover{
+    color: #ff7a5957;
+}
+
+/* Responsive styles */
+@media (max-width: 1200px) {
+    .integeration_hero .content {
+        width: 80%;
+    }
+
+    .integeration_hero .content h1 {
+        font-size: 45px;
+    }
+
+    .integeration_hero .content p {
+        font-size: 18px;
+    }
+
+    .integeration_hero .content label,
+    .integeration_hero .content input[type="text"],
+    .integeration_hero .content p:last-of-type,
+    .integeration_hero .content button {
+        margin-left: 15%;
+    }
+
+    .integeration_hero .content img {
+        width: 40%;
+        margin-left: 15%;
+    }
+
+    .integeration_hero .content button {
+        width: 20%;
+        margin-left: 15%;
+    }
+}
+
+@media (max-width: 992px) {
+    .integeration_hero{
+        height: auto;
+    }
+    .integeration_hero .content {
+        width: 90%;
+        
+    }
+
+    .integeration_hero .content h1 {
+        font-size: 35px;
+    }
+
+    .integeration_hero .content p {
+        font-size: 16px;
+    }
+
+    .integeration_hero .content label,
+    .integeration_hero .content input[type="text"],
+    .integeration_hero .content p:last-of-type,
+    .integeration_hero .content button {
+        margin-left: 0%;
+    }
+
+    .integeration_hero .content img {
+        width: 50%;
+    }
+
+    .integeration_hero .content button {
+        width: 25%;
+    }
+}
+
+@media (max-width: 768px) {
+    .integeration_hero {
+        height: 150vh;
+    }
+
+    .integeration_hero .content h1 {
+        font-size: 28px;
+    }
+
+    .integeration_hero .content p {
+        font-size: 14px;
+    }
+
+    .integeration_hero .content img {
+        width: 60%;
+    }
+
+    .integeration_hero .content button {
+        width: 30%;
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 576px) {
+    .integeration_hero {
+        height: 150vh;
+    }
+
+    .integeration_hero .content h1 {
+        font-size: 24px;
+    }
+
+    .integeration_hero .content p {
+        font-size: 12px;
+    }
+
+    .integeration_hero .content img {
+        width: 70%;
+    }
+
+    .integeration_hero .content button {
+        width: 40%;
+        font-size: 12px;
+    }
+}

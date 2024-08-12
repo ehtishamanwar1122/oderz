@@ -26,8 +26,8 @@
                 <nav>
                     <ul>
                         <li><a href="#home">Home</a></li>
-                        <li><a href="#second">Pricing</a></li>
-                        <li><a href="#third">Talk to us</a></li>
+                        <li><a href="./Pricing.html">Pricing</a></li>
+                        <li><a href="./Intergeration.html">Talk to us</a></li>
                         <li>
                             <a href="#fourth">Products</a>
                             <ul class="dropdown">
@@ -986,36 +986,40 @@ line-height: 27px;
             .custom-container {
                 max-width: 1140px;
                 margin: 0 auto;
+                font-family: "Poppins", sans-serif !important;
             }
     
             .footer-section {
-                margin-top: 20px;
+                
                 background: #000000;
                 color: #fff;
                 float: left;
                 width: 100%;
                 padding: 37px 0px 60px 0px;
+                
             }
-    
-            .footer-data-box {
-                display: grid;
-                width: 100%;
-                grid-template-columns: 1.8fr 1fr 1fr 1.7fr;
-                grid-template-rows: auto;
-                grid-template-areas: ". . . .";
-                gap: 30px 30px;
-            }
-    
+                    .footer-data-box {
+                    display: flex;
+                    justify-content: space-between; 
+
+                }
+
+                .footer-data-box-detail {
+                    flex: 2 1 1 2; 
+                    max-width: calc(25% - 10px); 
+                }
+
             .footer-detail-box-one {
                 display: flex;
                 flex-direction: column;
                 width: 100%;
+                margin-left: 30px;
             }
     
             .footer-detail-box-one figure {
                 margin: 0px !important;
                 width: 123px !important;
-                padding-bottom: 28px;
+                padding-bottom: ;
             }
     
             .footer-detail-box-one figure img {
@@ -1029,7 +1033,7 @@ line-height: 27px;
                 line-height: 23px;
                 letter-spacing: 0.20000000298023224px;
                 text-align: justify;
-                padding-bottom: 30px;
+              
             }
     
             .footer-socail-links {
@@ -1042,6 +1046,7 @@ line-height: 27px;
                 align-items: center;
                 justify-content: center;
                 margin-right: 17px;
+                text-decoration: none;
             }
     
             .footer-socail-links a:last-child {
@@ -1182,6 +1187,7 @@ line-height: 27px;
                 margin-bottom: 10px;
                 max-width: 100%;
                 margin: 0 auto;
+                
             }
     
             .footer_newsletter_form_fields_content input {
@@ -1465,7 +1471,7 @@ line-height: 27px;
             </section>
             
             </section>    
-        <section>
+<section>
     <style>
       .footer_part_two {
                     background: #000000;
