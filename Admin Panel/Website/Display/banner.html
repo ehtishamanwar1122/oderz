@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>banner</title>
+    
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/Admin Panel/Orders/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <style>
+        .header {
+            display: flex;           
+            align-items: center;    
+            padding: 10px 20px;     
+        }
+
+        .header .section {
+            margin-right: 20px;     
+        }
+
+        .header .section h1 {
+            margin: 0;             
+            font-size: 0.8em;      
+            color: #333;           
+        }
+        .header .section a{
+            text-decoration: none;
+        }
+        .actions-menu {
+            position: relative;
+            display: inline-block;
+        }
+
+        .three-dots {
+            font-size: 18px;
+            cursor: pointer;
+        }
+
+        .dropdown-menu {
+            display: none;
+            position: absolute;
+            background-color: #f9f9f9;
+            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+            z-index: 1;
+        }
+
+        .dropdown-menu button {
+            background-color: transparent;
+            border: none;
+            padding: 8px 16px;
+            text-align: left;
+            width: 100%;
+            cursor: pointer;
+        }
+
+        .dropdown-menu button:hover {
+            background-color: #f1f1f1;
+        }
+
+        .actions-menu:hover .dropdown-menu {
+            display: block;
+            top: 100%;
+            left: 0;
+        }
+    </style>
+    
+</head>
+<body>
+    
+    <section class="orders_section00" style="padding-bottom: -115px;"> 
+        <header class="header">
+            <div class="section">
+                <a href="./banner.html"><h1>banner</h1></a>
+            </div>
+            <div class="section">
+                <a href="./ticker.html"><h1>ticker</h1></a>
+            </div>
+            <div class="section">
+                <a href="./popup.html"><h1>topup</h1></a>
+            </div>
+            <div class="section">
+                <a href="./favicon.html"><h1>favicon</h1></a>
+            </div>
+            
+        </header>
+    </section>
+
+<section class="orders_section"> 
+<nav class="navbar">
+    <h1 class="navbar-brand">Banner</h1>
+    <div class="button-group">
+        <button class="simple-button"><i class="fa-solid fa-plus"></i>  Add Banner</button>
+    </div>
+</nav>
+
+
+<!-- order -->
+
+<div class="table-container">
+    <table class="order-table">
+        <thead>
+            <tr>
+                <th>Image</th>
+                <th>Platform</th>
+                <th>From</th>
+                <th>To</th>
+                <th>Display ON/OFF</th>
+                <th>Actions</th>
+            </tr>
+        </thead>
+
+        <tbody>
+            <tr>
+                <td>
+                    <img src="https://via.placeholder.com/50x50.png?text=Image1" alt="Platform Image 1" width="50" height="50">
+                </td>
+                <td>Facebook</td>
+                <td>2024-08-01</td>
+                <td>2024-08-31</td>
+                <td>
+                    <label class="switch">
+                        <input type="checkbox" checked>
+                        <span class="slider"></span>
+                    </label>
+                </td>
+                <td>
+                    <div class="actions-menu">
+                        <span class="three-dots">&#x22EE;</span>
+                        <div class="dropdown-menu">
+                            <button class="edit-btn">Edit</button>
+                            <button class="delete-btn">Delete</button>
+                        </div>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <img src="https://via.placeholder.com/50x50.png?text=Image2" alt="Platform Image 2" width="50" height="50">
+                </td>
+                <td>Instagram</td>
+                <td>2024-09-01</td>
+                <td>2024-09-30</td>
+                <td>
+                    <label class="switch">
+                        <input type="checkbox">
+                        <span class="slider"></span>
+                    </label>
+                </td>
+                <td>
+                    <div class="actions-menu">
+                        <span class="three-dots">&#x22EE;</span>
+                        <div class="dropdown-menu">
+                            <button class="edit-btn">Edit</button>
+                            <button class="delete-btn">Delete</button>
+                        </div>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <img src="https://via.placeholder.com/50x50.png?text=Image3" alt="Platform Image 3" width="50" height="50">
+                </td>
+                <td>Twitter</td>
+                <td>2024-10-01</td>
+                <td>2024-10-31</td>
+                <td>
+                    <label class="switch">
+                        <input type="checkbox" checked>
+                        <span class="slider"></span>
+                    </label>
+                </td>
+                <td>
+                    <div class="actions-menu">
+                        <span class="three-dots">&#x22EE;</span>
+                        <div class="dropdown-menu">
+                            <button class="edit-btn">Edit</button>
+                            <button class="delete-btn">Delete</button>
+                        </div>
+                    </div>
+                </td>
+            </tr>
+            <!-- Add more rows as needed -->
+        </tbody>
+    
+    </table>
+</div>
+</section>
+</body>
+</html>

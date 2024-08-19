@@ -190,6 +190,10 @@ iframe {
     border-radius: 5px;
     font-size: 15px;
     cursor: pointer;
+
+}
+.Details .container .btn_talk{
+    margin-bottom: 20px;
 }
 
 .Details .container .heading {

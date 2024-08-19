@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reviews</title>
+    
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../Orders/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <style>
+        .header {
+            display: flex;           
+            align-items: center;    
+            padding: 10px 20px;     
+        }
+
+        .header .section {
+            margin-right: 20px;     
+        }
+
+        .header .section h1 {
+            margin: 0;             
+            font-size: 0.8em;      
+            color: #333;           
+        }
+        .header .section a{
+            text-decoration: none;
+        }
+    </style>
+    
+</head>
+<body>
+    
+    <section class="orders_section00" style="padding-bottom: -115px;"> 
+        <header class="header">
+            <div class="section">
+                <a href="./reviews.html"><h1>Products</h1></a>
+            </div>
+            <div class="section">
+                <a href="./Business_review.html"><h1>Business</h1></a>
+            </div>
+        </header>
+    </section>
+
+<section class="orders_section"> 
+<nav class="navbar">
+    <h1 class="navbar-brand">Product Reviews</h1>
+
+    <div class="search-container">
+        <div class="search-icon">
+            <i class="fa-solid fa-magnifying-glass"  style="margin-top: 10px;"></i>
+        </div>
+        <input type="text" class="search-input" placeholder="Search Item Reviews">
+    </div>
+
+
+    <div class="button-group">
+        <button class="simple-button">Export Reviews</button>
+    </div>
+</nav>
+
+
+<!-- order -->
+
+<div class="table-container">
+    <table class="order-table">
+        <thead>
+            <tr>
+                <th>Date & Time</th>
+                <th>Product</th>
+                <th>Reviews</th>
+                <th>Customer Name</th>
+                <th>Approve/Disapprove</th>
+            </tr>
+        </thead>
+
+        <tbody>
+            <tr>
+                <td>2024-08-16 10:30 AM</td>
+                <td>Product A</td>
+                <td>5 stars</td>
+                <td>John Doe</td>
+                <td>
+                    <button class="approve-btn">Approve</button>
+                    <button class="disapprove-btn">Disapprove</button>
+                </td>
+            </tr>
+            <tr>
+                <td>2024-08-16 11:00 AM</td>
+                <td>Product B</td>
+                <td>4 stars</td>
+                <td>Jane Smith</td>
+                <td>
+                    <button class="approve-btn">Approve</button>
+                    <button class="disapprove-btn">Disapprove</button>
+                </td>
+            </tr>
+            <!-- Add more rows as needed -->
+        </tbody>
+        
+    </table>
+</div>
+</section>
+</body>
+</html>

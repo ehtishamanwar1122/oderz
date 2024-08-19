@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Custom Orders</title>
+    
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+<section class="orders_section"> 
+<nav class="navbar">
+    <h1 class="navbar-brand">Orders</h1>
+
+    <div class="search-container">
+        <div class="search-icon">
+            <i class="fa-thin fa-magnifying-glass"></i>
+        </div>
+        <input type="text" class="search-input" placeholder="Search">
+    </div>
+
+    <div class="fpo-toggle">
+        <span>FPO</span>
+        <label class="switch">
+            <input type="checkbox">
+            <span class="slider"></span>
+        </label>
+    </div>
+
+    <div class="button-group">
+        <div class="dropdown">
+            <button class="dropdown-button">Bulk Print
+                <span class="dropdown-icon">&#9662;</span>
+            </button>
+            <div class="dropdown-content">
+                <a href="#">Option 1</a>
+                <a href="#">Option 2</a>
+                <a href="#">Option 3</a>
+            </div>
+        </div>
+        <button class="simple-button">Export Orders</button>
+    </div>
+</nav>
+
+<!--  -->
+
+<div class="filter-container">
+    <div class="dropdown">
+        <button class="dropdown-btn">City <span class="dropdown-icon">&#9662;</span></button>
+        <div class="dropdown-content">
+            <label><input type="checkbox" value="New York"> New York</label>
+            <label><input type="checkbox" value="Los Angeles"> Los Angeles</label>
+            <label><input type="checkbox" value="Chicago"> Chicago</label>
+            <button class="apply-btn">Apply</button>
+        </div>
+    </div>
+
+    <div class="dropdown">
+        <button class="dropdown-btn">Post <span class="dropdown-icon">&#9662;</span> </button>
+        <div class="dropdown-content">
+            <label><input type="checkbox" value="Downtown"> All Order Types</label>
+            <label><input type="checkbox" value="Downtown"> Pickup</label>
+            <label><input type="checkbox" value="Uptown"> Delivery</label>
+            <label><input type="checkbox" value="Suburbs"> Canada Post</label>
+            <button class="apply-btn">Apply</button>
+        </div>
+    </div>
+
+    <div class="dropdown">
+        <button class="dropdown-btn">Status <span class="dropdown-icon">&#9662;</span> </button>
+        <div class="dropdown-content">
+            <label><input type="checkbox" value="Office"> Pending</label>
+            <label><input type="checkbox" value="Home"> Confirmed</label>
+            <label><input type="checkbox" value="Warehouse"> Cancelled</label>
+            <button class="apply-btn">Apply</button>
+        </div>
+    </div>
+
+    
+</div>
+
+<!-- order -->
+<div class="table-container">
+    <table class="order-table">
+        <thead>
+            <tr>
+                <th>Order #</th>
+                <th>Date</th>
+                <th>Customer Name</th>
+                <th>City</th>
+                <th>Area</th>
+                <th>Location</th>
+                <th>Status</th>
+                <th>Grand Total</th>
+                <th>Source</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1001</td>
+                <td>2024-08-15</td>
+                <td>John Doe</td>
+                <td>New York</td>
+                <td>Brooklyn</td>
+                <td>123 Main St</td>
+                <td>Shipped</td>
+                <td>$150.00</td>
+                <td>Online</td>
+            </tr>
+            <tr>
+                <td>1002</td>
+                <td>2024-08-14</td>
+                <td>Jane Smith</td>
+                <td>Los Angeles</td>
+                <td>Downtown</td>
+                <td>456 Market St</td>
+                <td>Processing</td>
+                <td>$200.00</td>
+                <td>Store</td>
+            </tr>
+            <!-- Add more rows as needed -->
+        </tbody>
+    </table>
+</div>
+</section>
+</body>
+</html>

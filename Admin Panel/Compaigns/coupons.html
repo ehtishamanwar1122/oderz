@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Custom Orders</title>
+    
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../Orders/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <style>
+        .navbar {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 30px 20px;
+            background-color: #fff;
+            border-bottom: 1px solid #ccc;
+        }
+
+        .navbar-brand {
+            font-size: 24px;
+            font-weight: bold;
+            color: #333;
+            margin: 0;
+        }
+
+        .search-container {
+            display: flex;
+            align-items: center;
+            position: relative;
+            margin-left: -250px;
+            margin-right: 250px;
+        }
+
+        .search-icon {
+            position: absolute;
+            left: 10px;
+            width: 20px;
+            height: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .search-icon i {
+            color: #888;
+            font-size: 16px;
+        }
+
+        .search-input {
+            width: 100%;
+            padding: 8px 8px 8px 40px;
+            font-size: 16px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            outline: none;
+            transition: border-color 0.3s;
+        }
+
+        .search-input:focus {
+            border-color: #007bff;
+        }
+
+        .button-group {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .simple-button {
+            padding: 10px 16px;
+            border: none;
+            border-radius: 4px;
+            font-size: 16px;
+            cursor: pointer;
+            background-color: #ec407a;
+            color: white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .simple-button i {
+            margin-right: 8px;
+        }
+
+    </style>
+</head>
+<body>
+<section class="orders_section"> 
+    <nav class="navbar">
+        <h1 class="navbar-brand">Orders</h1>
+
+        <div class="search-container">
+            <div class="search-icon">
+                <i class="fa-solid fa-magnifying-glass"></i>
+            </div>
+            <input type="text" class="search-input" placeholder="Search Coupons">
+        </div>
+
+        <div class="button-group">
+            <button class="simple-button"><i class="fa-solid fa-plus"></i> Create Coupons</button>
+        </div>
+    </nav>
+
+    <!-- Order Table -->
+    <div class="table-container">
+        <table class="order-table">
+            <thead>
+                <tr>
+                    <th>Report</th>
+                    <th>Voucher</th>
+                    <th>Name</th>
+                    <th>Type</th>
+                    <th>Start</th>
+                    <th>End</th>
+                    <th>Campaign Status</th>
+                    <th>Actions</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Monthly Report</td>
+                    <td>Voucher001</td>
+                    <td>John Doe</td>
+                    <td>Email</td>
+                    <td>2024-08-01</td>
+                    <td>2024-08-31</td>
+                    <td>Active</td>
+                    <td>
+                        <button>Edit</button>
+                        <button>Delete</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Weekly Report</td>
+                    <td>Voucher002</td>
+                    <td>Jane Smith</td>
+                    <td>SMS</td>
+                    <td>2024-08-07</td>
+                    <td>2024-08-13</td>
+                    <td>Inactive</td>
+                    <td>
+                        <button>Edit</button>
+                        <button>Delete</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Quarterly Report</td>
+                    <td>Voucher003</td>
+                    <td>Michael Brown</td>
+                    <td>Social Media</td>
+                    <td>2024-07-01</td>
+                    <td>2024-09-30</td>
+                    <td>Active</td>
+                    <td>
+                        <button>Edit</button>
+                        <button>Delete</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Annual Report</td>
+                    <td>Voucher004</td>
+                    <td>Emily Davis</td>
+                    <td>Print</td>
+                    <td>2024-01-01</td>
+                    <td>2024-12-31</td>
+                    <td>Pending</td>
+                    <td>
+                        <button>Edit</button>
+                        <button>Delete</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Special Report</td>
+                    <td>Voucher005</td>
+                    <td>David Wilson</td>
+                    <td>Email</td>
+                    <td>2024-09-01</td>
+                    <td>2024-09-15</td>
+                    <td>Completed</td>
+                    <td>
+                        <button>Edit</button>
+                        <button>Delete</button>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</section>
+</body>
+</html>

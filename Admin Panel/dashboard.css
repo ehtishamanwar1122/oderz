@@ -1,0 +1,78 @@
+body{
+    background-color: #e4e7ec;
+}
+section{
+    margin: 1rem;
+    background-color: #fff;
+    border-radius: 5px;
+    padding: 0 2rem 0 2rem;
+}
+
+.stat-card {
+    border: 1px solid #dee2e6;
+    border-radius: 0.25rem;
+    padding: 0.5rem;
+    text-align: center;
+    background-color: #fff;
+}
+.stat-card h5{
+    font-size: 15px;
+}
+.stat-card p{
+    font-size: 12px;
+}
+@media (max-width: 767.98px) {
+    .stat-card {
+        margin-bottom: 1rem;
+    }
+}
+
+.cont{
+    margin-top: 30px;
+}
+.upper-images {
+    display: flex;
+    gap: 75px; 
+    display: flex;
+    
+}
+
+.image {
+    flex-shrink: 0; 
+    border-radius: 15px;
+}
+
+.image img {
+    display: block;
+    width: 100%;
+    height: auto;
+    border-radius: 15px;
+}
+
+.image-60 {
+    flex: 0 0 60%;
+}
+
+.image-30 {
+    flex: 0 0 30%;
+}
+
+.lower-image {
+    width: 100%;
+    margin-top: 15px;
+
+}
+
+.lower-image img {
+    width: 100%;
+    height: auto;
+    border-radius: 15px;
+}
+
+.hero{
+    height: 500px;
+}
+.hero1{
+
+    border-radius: 15px
+}

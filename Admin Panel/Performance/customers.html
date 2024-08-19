@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Customers</title>
+    
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../Orders/styles.css">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <style>
+        .order-summary {
+            display: flex;
+            gap: 10px;
+            max-width: 1200px;
+            margin: auto;
+            flex-direction: row;
+        }
+    
+        .column {
+            display: flex;
+            gap: 20px;
+            flex: 1;
+        }
+    
+        .item {
+            background-color: #ffffff;
+            border: 1px solid #dddddd92;
+            padding: 20px;
+            border-radius: 4px;
+            box-shadow: 0 2px 4px rgba(206, 178, 178, 0.1);
+            display: flex;
+            flex-direction: column;
+           
+        }
+    </style>
+</head>
+<body>
+<section class="orders_section"> 
+<nav class="navbar">
+    <h1 class="navbar-brand"> Delivery Performance</h1>
+</nav>
+<!-- order summary -->
+
+<div class="order-summary">
+    <div class="column">
+        <div class="item">
+            <h3>Total Orders</h3>
+            <p>0</p>
+        </div>
+    
+        <div class="item">
+            <h3>Ordering Customers</h3>
+            <p>0</p>
+        </div>
+    </div>
+    <div class="column">
+        <div class="item">
+            <h3>New Sign Up Customers</h3>
+            <p>0</p>
+        </div>
+   
+        <div class="item">
+            <h3>Inactive Signups</h3>
+            <p>0 %</p>
+        </div>
+    </div>
+</div>
+
+
+</section>
+</body>
+</html>
