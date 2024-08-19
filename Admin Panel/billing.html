@@ -7,7 +7,9 @@
     
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="/Admin Panel/Orders/styles.css">
+    <link rel="stylesheet" href="/Admin Panel/dashboard.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
 
 </head>
 <body>
@@ -86,47 +88,58 @@
 .dropdown:hover .dropdown-content {
     display: block;
 }
-.table-section {
-    padding: 20px;
-    background-color: #f9f9f9;
-}
-
-.table-section h2 {
-    margin-top: 0;
-    font-size: 24px;
-}
-
-.table-container {
-    background-color: #fff;
-    border-radius: 8px;
-    overflow: hidden;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-}
-
-table {
-    width: 100%;
-    border-collapse: collapse;
-}
-
-td {
+/* Container */
+.container {
     padding: 15px;
-    text-align: left;
+    max-width: 1140px; 
 }
 
-td {
-    color: #333;
-    font-weight: 500;
-    font-size: 14px;
+/* Row */
+.row {
+    margin-right: -15px;
+    margin-left: -15px;
+    display:flex;
+    flex-direction: row;
 }
 
-tr:nth-child(even) {
-    background-color: #f9f9f9;
+/* Column */
+.col-md-3 {
+    position: relative;
+    width: 25%;
+    padding-right: 15px;
+    padding-left: 15px;
 }
 
-tr:hover {
-    background-color: #f1f1f1;
+/* Stat Card */
+.stat-card {
+    padding: 10px;
+    margin-bottom: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Shadow effect */
 }
-    </style>
+
+.stat-card h5 {
+    font: 1em sans-serif;
+    margin-bottom: 10px;
+}
+
+.stat-card p {
+    font-size: .9rem; 
+    margin: 0;
+    font-weight: 600; 
+    color: #495057; 
+}
+
+
+@media (max-width: 767.98px) {
+    .stat-card {
+        text-align: center; 
+    }
+    .col-md-6{
+        width: 50%;
+    }
+}
+
+</style>
     <nav class="navbar">
         <div class="navbar-content">
             <a href="#" class="nav-link">Plans & Billing</a>
@@ -164,39 +177,26 @@ tr:hover {
     </nav>
 
     <!--  -->
-    <div class="table-section">
-        <h2>Monthly Package Details</h2>
-        <div class="table-container">
-            <table>
-                <tbody>
-                    <tr>
-                        <td>Total Orders</td>
-                        <td>0</td>
-                    </tr>
-                    <tr>
-                        <td>Total Bill</td>
-                        <td>0</td>
-                    </tr>
-                    <tr>
-                        <td>Price Breakdown</td>
-                        <td>0</td>
-                    </tr>
-                    <tr>
-                        <td>First 0 Orders</td>
-                        <td>0</td>
-                    </tr>
-                    <tr>
-                        <td>Additional 0 Orders - 0 Each</td>
-                        <td>0</td>
-                    </tr>
-                    <tr>
-                        <td>Total</td>
-                        <td>0</td>
-                    </tr>
-                </tbody>
-            </table>
+    <div class="container"  >
+        <h1 class="container" style="text-align: center;">Monthly Billing Report</h1>
+        <div class="row text-center">
+            <div class="col-md-3 col-sm-6 stat-card">
+                <h5>Total Sale</h5>
+                <p>$10,000</p>
+            </div>
+            <div class="col-md-3 col-sm-6 stat-card">
+                <h5>Total Orders</h5>
+                <p>150</p>
+            </div>
+            <div class="col-md-3 col-sm-6 stat-card">
+                <h5>Avg. Order Value</h5>
+                <p>$66.67</p>
+            </div>
+            <div class="col-md-3 col-sm-6 stat-card">
+                <h5>Cart Abandonment</h5>
+                <p>25%</p>
+            </div>
         </div>
-    </div>
 </section>
 </body>
 </html>
