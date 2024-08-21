@@ -7,6 +7,7 @@
     
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="/Admin Panel/Orders/styles.css">
+    <link rel="stylesheet" href="/Admin Panel/header/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 
     <style>
@@ -68,7 +69,96 @@
     
 </head>
 <body>
-    
+    <div class="top-bar">
+        <a href="#">Switch to Old Biz <span>Click here</span></a>
+    </div>
+
+    <header class="sticky-header">
+        <div class="header-content">
+            <div class="logo">
+               <img src="/Admin Panel/header/ordrx.PNG" alt="ORDRZ Logo">
+            </div>
+
+            <div class="nav-toggle">
+                <i class="fas fa-bars"></i>
+            </div>
+
+            <div class="calendar-branch">
+                <div class="calendar">
+                    <span>Aug 11 2024 - Aug 13 2024</span>
+                    <i class="fas fa-calendar-alt"></i>
+                </div>
+                <div class="branch">
+                    Branch: <span>,, Islamabad</span>
+                </div>
+            </div>
+
+            <div class="view-website">
+                <a href="#">View Website</a>
+                <i class="fas fa-cog"></i>
+            </div>
+        </div>
+    </header>
+
+    <div class="sidebar">
+        <ul class="nav-list">
+            <li class="nav-item"><a href="/Admin Panel/dashboard.html">Dashboard</a></li>
+            <li class="nav-item">
+                <a href="#" class="dropdown-btn">Orders <i class="fas fa-chevron-down"></i></a>
+                <ul class="dropdown-container">
+                    <li><a href="/Admin Panel/Orders/orders.html">Orders</a></li>
+                    <li><a href="/Admin Panel/Orders/abondendcart.html">Abandoned Carts</a></li>
+                </ul>
+            </li>
+            <li class="nav-item">
+                <a href="#" class="dropdown-btn">Products <i class="fas fa-chevron-down"></i></a>
+                <ul class="dropdown-container">
+                    <li><a href="/Admin Panel/Products/items.html">items</a></li>
+                    <li><a href="/Admin Panel/Products/category.html">Categories</a></li>
+                    <li><a href="/Admin Panel/Products/Setup/options.html">Setup</a></li>
+                    <li><a href="/Admin Panel/Products/photos.html">Photos</a></li>
+                </ul>
+            </li>
+            <li class="nav-item">
+                <a href="#" class="dropdown-btn">Campaigns <i class="fas fa-chevron-down"></i></a>
+                <ul class="dropdown-container">
+                    <li><a href="/Admin Panel/Compaigns/loyalty.html">Loyalty</a></li>
+                    <li><a href="/Admin Panel/Compaigns/coupons.html">Coupons</a></li>
+                </ul>
+            </li>
+            <li class="nav-item">
+                <a href="#" class="dropdown-btn">Performance <i class="fas fa-chevron-down"></i></a>
+                <ul class="dropdown-container">
+                    <li><a href="/Admin Panel/Performance/Orders.html">Orders</a></li>
+                    <li><a href="/Admin Panel/Performance/delivery.html">Delivery</a></li>
+                    <li><a href="/Admin Panel/Performance/loyalty.html">Loyalty</a></li>
+                    <li><a href="/Admin Panel/Performance/reviews.html">Reviews</a></li>
+                    <li><a href="/Admin Panel/Performance/customers.html">Customers</a></li>
+                    <li><a href="/Admin Panel/Performance/Business_review.html">Custom Reports</a></li>
+                </ul>
+            </li>
+            <li class="nav-item"><a href="/Admin Panel/customer.html">Customers</a></li>
+            <li class="nav-item"><a href="/Admin Panel/reservation.html">Reservations</a></li>
+            <li class="nav-item">
+                <a href="#" class="dropdown-btn">Website <i class="fas fa-chevron-down"></i></a>
+                <ul class="dropdown-container">
+                    <li><a href="/Admin Panel/Website/Display/popup.html">Display</a></li>
+                    <li><a href="/Admin Panel/Website/SEO/categories.html">SEO</a></li>
+                    <li><a href="/Admin Panel/Website/static.html">Static Pages</a></li>
+                </ul>
+            </li>
+            <li class="nav-item">
+                <a href="#" class="dropdown-btn">POS <i class="fas fa-chevron-down"></i></a>
+                <ul class="dropdown-container">
+                    <li><a href="/Admin Panel/POS/Reports/products.html">Reports</a></li>
+                    <li><a href="/Admin Panel/POS/staff attendance/staff_attendance.html">Staff Attend</a></li>
+                </ul>
+            </li>
+            <li class="nav-item"><a href="/Admin Panel/billing.html">Plans & Billing</a></li>
+            <li class="nav-item"><a href="#">Settings</a></li>
+            <li class="nav-item"><a href="/Admin Panel/partner_download_app.html">Partner App Download</a></li>
+        </ul>
+    </div>
     <section class="orders_section00" style="padding-bottom: -115px;"> 
         <header class="header">
             <div class="section">
@@ -167,5 +257,6 @@
     </table>
 </div>
 </section>
+<script src="/Admin Panel/header/script.js"></script>
 </body>
 </html>
