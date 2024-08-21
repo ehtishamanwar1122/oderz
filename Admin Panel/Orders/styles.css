@@ -276,6 +276,13 @@ input:checked + .slider:before {
     }
 }
 @media screen and (max-width: 768px) {
+    .orders_section00{
+        margin-left: 0%;
+        width: 100%;}
+    .orders_section{
+        overflow: hidden;
+        margin-left: 0%;
+        width: 100%;}
     .navbar {
         flex-direction: column;
         padding: 10px;
@@ -341,6 +348,13 @@ input:checked + .slider:before {
 }
 
 @media screen and (max-width: 480px) {
+    .orders_section{
+        width: 100%;
+    }
+    .orders_section00{
+        width: 100%;
+
+    }
     .navbar-brand {
         font-size: 18px;
     }

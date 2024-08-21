@@ -8,3 +8,33 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     });
 });
+document.addEventListener('DOMContentLoaded', function() {
+    const navToggle = document.querySelector('.nav-toggle');
+    const sidebar = document.querySelector('.sidebar');
+    const ordersSection00 = document.querySelector('.orders_section00');
+    const ordersSection = document.querySelector('.orders_section');
+
+    navToggle.addEventListener('click', function() {
+        
+        sidebar.classList.toggle('sidebar-active');
+
+        if (sidebar.classList.contains('sidebar-active')) {
+            sidebar.style.transform = 'translateX(-550px)'; 
+            ordersSection00.style.width = '100%';
+            ordersSection.style.width = '100%';
+            ordersSection00.style.marginLeft = '0';
+            ordersSection.style.marginLeft = '0';
+            ordersSection.style.padding = '0';
+            ordersSection00.style.padding = '10px 0 10px 0';
+            sidebar.style.transition = 'transform 0.3s ease';
+        } else {
+            sidebar.style.transform = 'translateX(0)'; 
+            ordersSection00.style.width = '60%';
+            ordersSection.style.width = '60%';
+            ordersSection00.style.marginLeft = '35%';
+            ordersSection.style.marginLeft = '35%';
+            
+            ordersSection00.style.padding = '10px 0 10px 0';
+        }
+    });
+});
