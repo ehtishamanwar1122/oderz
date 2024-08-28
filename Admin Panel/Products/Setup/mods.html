@@ -94,7 +94,7 @@
             </div>
 
             <div class="view-website">
-                <a href="#">View Website</a>
+                <a href="/view/index.html">View Website</a>
                 <i class="fas fa-cog"></i>
             </div>
         </div>
@@ -189,18 +189,42 @@
 
     <div class="search-container">
         <div class="search-icon">
-            <i class="fa-solid fa-magnifying-glass"  style="margin-top: 10px;"></i>
+            <i class="fa-solid fa-magnifying-glass"  style="margin-top: 15px;"></i>
         </div>
-        <input type="text" class="search-input" placeholder="Search Mods">
+        <input type="text" class="search-input" placeholder="Search Items" style="padding: 10px 30px;">
     </div>
 
 
     <div class="button-group">
-        <button class="simple-button"><i class="fa-solid fa-plus"></i>  Add Mods</button>
+        <button class="simple-button" id="addItemButton"><i class="fa-solid fa-plus"></i>  Add Mods</button>
     </div>
 </nav>
 
+<!-- pop-up -->
+<div id="overlay"></div>
 
+<div id="itemPopup" class="popup">
+    <div class="popup-content">
+      <!-- Close Button -->
+      <span class="close-button" id="closePopup">&times;</span>
+      
+      <!-- Form Elements -->
+      <h3>Add Mod</h3>
+      <form id="itemForm">
+        <div>
+          <label for="name">Mod Name</label>
+          <input type="text" id="name" name="name" placeholder="Add Mod">
+        </div>
+
+        
+        <!-- Buttons -->
+        <div id="button-group">
+          <button type="button" id="cancelButton">Cancel</button>
+          <button type="submit" id="addButton">Add Item</button>
+        </div>
+      </form>
+    </div>
+  </div>
 <!-- order -->
 
 <div class="table-container">

@@ -36,7 +36,7 @@
             </div>
 
             <div class="view-website">
-                <a href="#">View Website</a>
+                <a href="/view/index.html">View Website</a>
                 <i class="fas fa-cog"></i>
             </div>
         </div>
@@ -107,15 +107,63 @@
 
     <div class="search-container">
         <div class="search-icon">
-            <i class="fa-solid fa-magnifying-glass" style="margin-top: 10px;"></i>
+            <i class="fa-solid fa-magnifying-glass"  style="margin-top: 15px;"></i>
         </div>
-        <input type="text" class="search-input" placeholder="Search Categories">
+        <input type="text" class="search-input" placeholder="Search Items" style="padding: 10px 30px;">
     </div>
 
-
-        <button class="simple-button"><i class="fa-solid fa-plus"></i>  Add Item</button>
+        <button class="simple-button" id="addItemButton"><i class="fa-solid fa-plus"></i>  Add Category</button>
     </div>
 </nav>
+
+
+<!-- popup -->
+
+<div id="itemPopup" class="popup">
+    <div class="popup-content">
+      <!-- Close Button -->
+      <span class="close-button" id="closePopup">&times;</span>
+      
+      <!-- Form Elements -->
+      <h3>Add New Category</h3>
+      <form id="itemForm">
+        
+        <div>
+          <label for="name">CategoryName</label>
+          <input type="text" id="name" name="name">
+        </div>
+      
+        <div>
+            <label for="description">Description</label>
+            <textarea id="description" name="description"></textarea>
+        </div>
+
+        <div>
+          <label>Display</label>
+          <div>
+            <input type="radio" id="displayAll" name="display" value="all">
+            <label for="displayAll">All</label>
+            <input type="radio" id="displayNone" name="display" value="none">
+            <label for="displayNone">None</label>
+            <input type="radio" id="displayWeb" name="display" value="web">
+            <label for="displayWeb">Web</label>
+            <input type="radio" id="displayPOS" name="display" value="pos">
+            <label for="displayPOS">POS</label>
+          </div>
+        </div>
+
+     
+      
+
+       
+        <!-- Buttons -->
+        <div id="button-group">
+          <button type="button" id="cancelButton">Cancel</button>
+          <button type="submit" id="addButton">Add Item</button>
+        </div>
+      </form>
+    </div>
+  </div>
 
 
 <!-- order -->

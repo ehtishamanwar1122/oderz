@@ -62,7 +62,7 @@
             </div>
 
             <div class="view-website">
-                <a href="#">View Website</a>
+                <a href="/view/index.html">View Website</a>
                 <i class="fas fa-cog"></i>
             </div>
         </div>
@@ -130,8 +130,38 @@
 <section class="orders_section"> 
     <nav class="navbar">
         <h1 class="navbar-brand">Photos</h1>
-        <button class="simple-button"><i class="fa-solid fa-plus"></i> Add Photos</button>
+        <button class="simple-button" id="addItemButton"><i class="fa-solid fa-plus"></i> Add Photos</button>
     </nav>
+
+    <!-- pop-up -->
+<div id="overlay"></div>
+
+<!-- Popup Content -->
+<div id="itemPopup" class="popup" >
+    <div class="popup-content" >
+      <!-- Close Button -->
+      <span class="close-button" id="closePopup" >&times;</span>
+      
+      <!-- Form Elements -->
+      <h3 >Add Photo</h3>
+      <form id="itemForm">
+        <!-- Upload Photo Button -->
+        <div style="margin-bottom: 15px;">
+          <label for="photoUpload" style="display: block; font-weight: bold; margin-bottom: 5px; color: #333;">Upload Photo</label>
+          <input type="file" id="photoUpload" style="padding: 10px 50px; border-radius: 5px; border: 1px solid #ccc; font-size: 14px; width: 100%;">
+
+        </div>
+
+        <!-- Other form fields can go here -->
+
+        <!-- Footer Buttons -->
+        <div class="button-group" style="display: flex; justify-content: space-between; padding: 10px 20px; background-color: #f8f9fa; border-top: 1px solid #ddd; position: absolute; bottom: 0; width: 70%; box-shadow: 0px -2px 5px rgba(0, 0, 0, 0.1);">
+          <button type="button" id="cancelButton" style="padding: 10px 20px; border: none; border-radius: 5px; cursor: pointer; font-size: 14px; ">Cancel</button>
+          <button type="submit" id="addButton" style="padding: 10px 20px; border: none; border-radius: 5px; cursor: pointer; font-size: 14px;">Add Item</button>
+        </div>
+      </form>
+    </div>
+  </div>
 
     <!-- Photos Section -->
     <div class="photos_container">

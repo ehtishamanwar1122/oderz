@@ -94,7 +94,7 @@
             </div>
 
             <div class="view-website">
-                <a href="#">View Website</a>
+                <a href="/view/index.html">View Website</a>
                 <i class="fas fa-cog"></i>
             </div>
         </div>
@@ -189,17 +189,57 @@
 
     <div class="search-container">
         <div class="search-icon">
-            <i class="fa-solid fa-magnifying-glass"  style="margin-top: 10px;"></i>
+            <i class="fa-solid fa-magnifying-glass"  style="margin-top: 15px;"></i>
         </div>
-        <input type="text" class="search-input" placeholder="Search Inner options">
+        <input type="text" class="search-input" placeholder="Search Items" style="padding: 10px 30px;">
     </div>
 
 
     <div class="button-group">
-        <button class="simple-button"><i class="fa-solid fa-plus"></i>  Add Inner Options Set</button>
+        <button class="simple-button" id="addItemButton"><i class="fa-solid fa-plus"></i>  Add Inner Options Set</button>
     </div>
 </nav>
 
+<!-- popup -->
+<div id="itemPopup" class="popup">
+    <div class="popup-content">
+      
+      <span class="close-button" id="closePopup">&times;</span>
+      
+    
+      <h3>Add New Option</h3>
+      <form id="itemForm">
+        
+        <div>
+          <input type="text" id="name" name="name" placeholder="Option Set Name">
+        </div>
+      
+        <div>
+            <label for="description">Description</label>
+            <textarea id="description" name="description"></textarea>
+        </div>
+
+        <section style="display: flex;flex-direction: row; gap: 2;">
+            <div>
+                <label for="price">Min Quantity</label>
+                <input type="number" id="price" name="min-Quantity" placeholder="min-Quantity">
+              </div>
+      
+              <div>
+                <label for="tax">Max Quantity</label>
+                <input type="number" id="tax" name="max-Quantity" placeholder="max-Quantity">
+              </div>
+        </section>
+        
+       
+        <!-- Buttons -->
+        <div id="button-group">
+          <button type="button" id="cancelButton">Cancel</button>
+          <button type="submit" id="addButton">Add Inner  Option</button>
+        </div>
+      </form>
+    </div>
+  </div>
 
 <!-- order -->
 

@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>pop-up</title>
+    <style>
+        /* Basic styling for button */
+#addItemButton {
+  margin: 20px;
+  padding: 10px 20px;
+  font-size: 16px;
+}
+
+/* Popup modal styling */
+.popup {
+  display: none; /* Hidden by default */
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+  justify-content: flex-start; /* Align popup to the left */
+}
+
+.popup-content {
+  background-color: white;
+  padding: 20px;
+  width: 300px; /* Width of the popup */
+  margin-left: 20px; /* Space from the left */
+  margin-top: 20px; /* Space from the top */
+  position: relative;
+}
+
+.close-button {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.button-group {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+    </style>
+</head>
+<body>
+    <div id="itemPopup" class="popup">
+        <div class="popup-content">
+          <!-- Close Button -->
+          <span class="close-button" id="closePopup">&times;</span>
+      
+          <!-- Form Elements -->
+          <h3>Add New Item</h3>
+          <form id="itemForm">
+            <div>
+              <label for="category">Category</label>
+              <select id="category" name="category">
+                <option value="category1">Category 1</option>
+                <option value="category2">Category 2</option>
+              </select>
+            </div>
+      
+            <div>
+              <label for="name">Name</label>
+              <input type="text" id="name" name="name">
+            </div>
+      
+            <div>
+              <label for="price">Item Price</label>
+              <input type="number" id="price" name="price">
+            </div>
+      
+            <div>
+              <label for="tax">Tax %</label>
+              <input type="number" id="tax" name="tax">
+            </div>
+      
+            <div>
+              <label for="brand">Brand</label>
+              <select id="brand" name="brand">
+                <option value="brand1">Brand 1</option>
+                <option value="brand2">Brand 2</option>
+              </select>
+            </div>
+      
+            <div>
+              <label for="orderLimit">Order Limit</label>
+              <input type="number" id="orderLimit" name="orderLimit">
+            </div>
+      
+            <div>
+              <label for="optionSet">Options Set</label>
+              <select id="optionSet" name="optionSet">
+                <option value="set1">Set 1</option>
+                <option value="set2">Set 2</option>
+              </select>
+            </div>
+      
+            <div>
+              <label for="itemGroup">Item to Group</label>
+              <select id="itemGroup" name="itemGroup">
+                <option value="group1">Group 1</option>
+                <option value="group2">Group 2</option>
+              </select>
+            </div>
+      
+            <div>
+              <label for="suggestedItems">Suggested Items</label>
+              <select id="suggestedItems" name="suggestedItems">
+                <option value="item1">Item 1</option>
+                <option value="item2">Item 2</option>
+              </select>
+            </div>
+      
+            <div>
+              <label for="specialNote">Special Note</label>
+              <textarea id="specialNote" name="specialNote"></textarea>
+            </div>
+      
+            <div>
+              <label for="availability">Available</label>
+              <input type="checkbox" id="availability" name="availability">
+            </div>
+      
+            <div>
+              <label for="specialInstructions">Special Instructions</label>
+              <input type="checkbox" id="specialInstructions" name="specialInstructions">
+            </div>
+      
+            <!-- Display Section with Radio Buttons -->
+            <div>
+              <label>Display</label>
+              <div>
+                <input type="radio" id="displayAll" name="display" value="all">
+                <label for="displayAll">All</label>
+                <input type="radio" id="displayNone" name="display" value="none">
+                <label for="displayNone">None</label>
+                <input type="radio" id="displayWeb" name="display" value="web">
+                <label for="displayWeb">Web</label>
+                <input type="radio" id="displayPOS" name="display" value="pos">
+                <label for="displayPOS">POS</label>
+              </div>
+            </div>
+      
+            <!-- Apply Discount Section -->
+            <div>
+              <label for="discount">Apply Discount</label>
+              <input type="checkbox" id="discount" name="discount">
+            </div>
+      
+            <!-- Other Sections -->
+            <div>
+              <label for="description">Description</label>
+              <textarea id="description" name="description"></textarea>
+            </div>
+      
+            <div>
+              <label for="inventory">Inventory</label>
+              <textarea id="inventory" name="inventory"></textarea>
+            </div>
+      
+            <div>
+              <label for="nutrition">Nutrition Value</label>
+              <textarea id="nutrition" name="nutrition"></textarea>
+            </div>
+      
+            <!-- Buttons -->
+            <div class="button-group">
+              <button type="button" id="cancelButton">Cancel</button>
+              <button type="submit" id="addButton">Add Item</button>
+            </div>
+          </form>
+        </div>
+      </div>
+      
+    
+</body>
+</html>

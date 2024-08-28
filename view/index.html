@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>View</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <header class="header">
+        <div class="left-section">
+            <img src="/images/logo-no-background.png" alt="Logo" class="logo">
+            <div class="delivery-container">
+                <button class="delivery-btn" id="deliveryBtn">Delivery <i class="fa-solid fa-caret-down"></i></button>
+                <p class="selected-location" id="selectedLocation"></p>
+            </div>
+        </div>
+        <div class="right-section">
+            <button class="cart-btn">
+                <span class="cart-icon">🛒</span>
+                <span class="cart-count">3</span>
+            </button>
+        </div>
+    </header>
+
+    <div class="modal" id="locationModal">
+        <div class="modal-content">
+            <h2>Select Your Location</h2>
+            <select id="locationSelect">
+                <option value="" disabled selected>Select your location</option>
+                <option value="New York">New York</option>
+                <option value="Los Angeles">Los Angeles</option>
+                <option value="Chicago">Chicago</option>
+                <option value="Houston">Houston</option>
+            </select>
+            <button id="saveLocationBtn">Start My Order</button>
+        </div>
+    </div>
+
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="navbar-right">
+            <div class="search-container">
+                <button class="search-btn">
+                    <i class="fas fa-search"></i>
+                </button>
+                <input type="text" placeholder="Search..." class="search-input">
+            </div>
+        </div>
+        <div class="navbar-left">
+            <a href="#" class="nav-link" data-category="cars">Cars</a>
+            <a href="#" class="nav-link" data-category="food">Food</a>
+            <a href="#" class="nav-link" data-category="travel">Travel</a>
+            <a href="#" class="nav-link" data-category="tech">Tech</a>
+        </div>
+    </nav>
+
+    <!-- Hero -->
+    <section class="hero-section">
+        <div class="product-name">
+            <h4>Cars</h4>
+        </div>
+        <div class="card-container" id="cardContainer">
+           
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer class="footer">
+        <div class="footer-left">
+            &copy; 2024 orderz.pk
+        </div>
+        <div class="footer-right">
+            Powered by ordrx.pk
+        </div>
+    </footer>
+    <script src="index.js"></script>
+</body>
+</html>

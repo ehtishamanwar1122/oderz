@@ -94,7 +94,7 @@
             </div>
 
             <div class="view-website">
-                <a href="#">View Website</a>
+                <a href="/view/index.html">View Website</a>
                 <i class="fas fa-cog"></i>
             </div>
         </div>
@@ -189,18 +189,41 @@
 
     <div class="search-container">
         <div class="search-icon">
-            <i class="fa-solid fa-magnifying-glass"  style="margin-top: 10px;"></i>
+            <i class="fa-solid fa-magnifying-glass"  style="margin-top: 15px;"></i>
         </div>
-        <input type="text" class="search-input" placeholder="Search Filter Tags">
+        <input type="text" class="search-input" placeholder="Search Items" style="padding: 10px 30px;">
     </div>
 
-
     <div class="button-group">
-        <button class="simple-button"><i class="fa-solid fa-plus"></i>  Add Filter Tags</button>
+        <button class="simple-button" id="addItemButton"><i class="fa-solid fa-plus"></i>  Add Filter Tags</button>
     </div>
 </nav>
 
-
+<!-- popup -->
+ 
+<div id="itemPopup" class="popup">
+    <div class="popup-content">
+      
+      <span class="close-button" id="closePopup">&times;</span>
+      
+    
+      <h3>Filter Tags</h3>
+      <form id="itemForm">
+        
+        <div>
+          <input type="text" id="name" name="name" placeholder="Filter-Tag Name">
+        </div>
+       
+        
+       
+        <!-- Buttons -->
+        <div id="button-group">
+          <button type="button" id="cancelButton">Cancel</button>
+          <button type="submit" id="addButton">Add Inner  Option</button>
+        </div>
+      </form>
+    </div>
+  </div>
 <!-- order -->
 
 <div class="table-container">

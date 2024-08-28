@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="../Orders/styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="/Admin Panel/header/style.css">
+    <link rel="stylesheet" href="./pop-up.css">
     <style>
         .navbar {
             display: flex;
@@ -114,7 +115,7 @@
             </div>
 
             <div class="view-website">
-                <a href="#">View Website</a>
+                <a href="/view/index.html">View Website</a>
                 <i class="fas fa-cog"></i>
             </div>
         </div>
@@ -183,19 +184,199 @@
     
 <section class="orders_section"> 
     <nav class="navbar">
-        <h1 class="navbar-brand">Orders</h1>
+        <h1 class="navbar-brand">Coupons</h1>
 
         <div class="search-container">
             <div class="search-icon">
-                <i class="fa-solid fa-magnifying-glass"></i>
+                <i class="fa-solid fa-magnifying-glass"  style="margin-top: 10px;"></i>
             </div>
-            <input type="text" class="search-input" placeholder="Search Coupons">
+            <input type="text" class="search-input" placeholder="Search Items" style="padding: 10px 30px;">
         </div>
-
+    
         <div class="button-group">
-            <button class="simple-button"><i class="fa-solid fa-plus"></i> Create Coupons</button>
+            <button class="simple-button" id="addItemButton"><i class="fa-solid fa-plus"></i> Create Coupons</button>
         </div>
     </nav>
+
+    <!-- popup -->
+    <section>
+        <style>
+            .modal-backdrop {
+                position: fixed;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                background-color: rgba(0, 0, 0, 0.5);
+                display: none;
+                z-index: 999;
+            }
+    
+            .modal {
+                position: fixed;
+                top: 50%;
+                right: 0;
+                transform: translateY(-50%);
+                background-color: #fff;
+                border-radius: 8px;
+                width: 350px; 
+                max-width: 90%;
+                max-height: 100%;
+                box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+                display: none;
+                z-index: 1000;
+                overflow-y: auto; /* Adds scrollbar when needed */
+            }
+    
+            .modal-content {
+                padding: 20px;
+                position: relative;
+                width: 100%;
+            }
+    
+            .close-icon {
+                position: absolute;
+                top: 20px;
+                right: 20px;
+                font-size: 24px;
+                cursor: pointer;
+            }
+    
+            .form-container {
+                display: flex;
+                flex-direction: column;
+                gap: 15px;
+            }
+    
+            .form-container label {
+                margin-bottom: 5px;
+                font-weight: bold;
+            }
+    
+            .form-container input[type="text"],
+            .form-container input[type="number"],
+            .form-container input[type="datetime-local"],
+            .form-container select,
+            .form-container textarea {
+                width: 100%;
+                padding: 8px;
+                border-radius: 4px;
+                border: 1px solid #ccc;
+            }
+    
+            .button-group {
+                display: flex;
+                justify-content: flex-end;
+                gap: 10px;
+            }
+    
+            .cancel-button,
+            .save-button {
+                padding: 10px 20px;
+                border-radius: 4px;
+                border: none;
+                cursor: pointer;
+            }
+    
+            .cancel-button {
+                background-color: #f5f5f5;
+                color: #333;
+            }
+    
+            .save-button {
+                background-color: #ea3b73;
+                color: #fff;
+            }
+    
+            .cancel-button:hover {
+                background-color: #e0e0e0;
+            }
+    
+            .save-button:hover {
+                background-color: #0056b3;
+            }
+        </style>
+    
+        <div id="overlay" class="modal-backdrop"></div>
+    
+        <div id="itemPopup" class="modal">
+            <div class="modal-content">
+                <span class="close-icon" id="closePopup">&times;</span>
+    
+                <h3>Add Coupon</h3>
+                <form id="campaignForm" class="form-container">
+                    <div>
+                        <label for="programName">Program Name</label>
+                        <input type="text" id="programName" name="programName">
+                    </div>
+    
+                    <div>
+                        <label for="startDate">Start Date Time</label>
+                        <input type="datetime-local" id="startDate" name="startDate">
+                    </div>
+    
+                    <div>
+                        <label for="expiryDate">Expiry</label>
+                        <input type="datetime-local" id="expiryDate" name="expiryDate">
+                    </div>
+    
+                    <div>
+                        <label for="voucherCode">Voucher Code</label>
+                        <input type="text" id="voucherCode" name="voucherCode">
+                    </div>
+    
+                    <div>
+                        <label for="numberOfUsage">Number Of Usage</label>
+                        <input type="number" id="numberOfUsage" name="numberOfUsage" value="1">
+                    </div>
+    
+                    <div>
+                        <label for="usagePerUser">Usage Per User</label>
+                        <input type="number" id="usagePerUser" name="usagePerUser" value="1">
+                    </div>
+    
+                    <div>
+                        <label for="discountType">Discount Type</label>
+                        <select id="discountType" name="discountType">
+                            <option value="percentage">Percentage</option>
+                            <option value="fixed">Fixed Amount</option>
+                            <!-- Add more discount types as needed -->
+                        </select>
+                    </div>
+    
+                    <div>
+                        <label for="discountValue">Discount Value</label>
+                        <input type="number" id="discountValue" name="discountValue" value="0">
+                    </div>
+    
+                    <div>
+                        <label for="couponActive">Coupon Active</label>
+                        <input type="checkbox" id="couponActive" name="couponActive">
+                    </div>
+    
+                    <div>
+                        <label for="rewardType">Reward Catelouge</label>
+                        <select id="rewardType" name="rewardType" placeholder="rewardType">
+                            <option value="type1">Type 1</option>
+                            <option value="type2">Type 2</option>
+                            
+                        </select>
+                    </div>
+    
+                    <div>
+                        <label for="minimumOrderAmount">Minimum Order Amount</label>
+                        <input type="number" id="minimumOrderAmount" name="minimumOrderAmount" value="0">
+                    </div>
+    
+                    <div class="button-group">
+                        <button type="button" class="cancel-button" id="cancelButton">Cancel</button>
+                        <button type="submit" class="save-button" id="addButton">Add Coupon</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+    
 
     <!-- Order Table -->
     <div class="table-container">

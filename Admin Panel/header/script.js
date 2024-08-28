@@ -8,6 +8,27 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     });
 });
+
+document.getElementById('addItemButton').addEventListener('click', function() {
+    document.getElementById('itemPopup').style.display = 'flex';
+  });
+  
+  document.getElementById('closePopup').addEventListener('click', function() {
+    document.getElementById('itemPopup').style.display = 'none';
+  });
+  
+  document.getElementById('cancelButton').addEventListener('click', function() {
+    document.getElementById('itemPopup').style.display = 'none';
+  });
+  
+  document.getElementById('itemForm').addEventListener('submit', function(e) {
+    e.preventDefault();
+    document.getElementById('itemPopup').style.display = 'none';
+  });
+  
+
+
+
 document.addEventListener('DOMContentLoaded', function() {
     const navToggle = document.querySelector('.nav-toggle');
     const sidebar = document.querySelector('.sidebar');
