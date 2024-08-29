@@ -110,4 +110,26 @@ document.addEventListener('DOMContentLoaded', () => {
 
     renderCards('cars');
 });
+let slideIndex = 0;
+const slides = document.querySelectorAll('.slide');
+const totalSlides = slides.length;
 
+function showSlide(index) {
+  slideIndex = index;
+  if (slideIndex < 0) {
+    slideIndex = totalSlides - 1;
+  } else if (slideIndex >= totalSlides) {
+    slideIndex = 0;
+  }
+  document.querySelector('.slider').style.transform = `translateX(-${slideIndex * 100}%)`;
+}
+
+document.querySelector('.prev').addEventListener('click', () => {
+  showSlide(slideIndex - 1);
+});
+
+document.querySelector('.next').addEventListener('click', () => {
+  showSlide(slideIndex + 1);
+});
+
+showSlide(slideIndex);
