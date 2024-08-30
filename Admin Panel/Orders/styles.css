@@ -4,7 +4,7 @@ body {
     background-color: #e4e7ec;
 }
 .orders_section{
-    margin: 0 30px 30px 30px;
+    margin: 10px 30px 30px 30px;
     padding: 15px 10px 50px 10px;
     background-color: #fff;
     border-radius: 15px;
@@ -12,7 +12,7 @@ body {
     margin-left: 25%;
 }
 .orders_section00{
-    margin: 30px;
+    margin: 10px 30px 0px 30px;
     padding: 15px 10px 10px 10px;
     background-color: #fff;
     border-radius: 15px;

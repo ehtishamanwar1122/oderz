@@ -104,216 +104,94 @@
             <li class="nav-item"><a href="/Admin Panel/partner_download_app.html">Partner App Download</a></li>
         </ul>
     </div>
-    <!-- <section class="orders_section00" style="padding-bottom: -115px;"> 
-        <header class="header">
-            <div class="section">
-                <a href="./reservation.html"><h1>Upcoming</h1></a>
-            </div>
-            <div class="section">
-                <a href="./expired.html"><h1>Expired</h1></a>
-            </div>
-            
-        </header>
-    </section> -->
+    
 
 
     
 <section class="orders_section"> 
-    <style>
-        .dashboard_head {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            padding: 1rem 0;
-        }
-
-        .dashboard_head h1 {
-            margin: 0;
-        }
-
-        .dropdown {
-            position: relative;
-        }
-
-        .dropdown button {
-            padding: 0.5rem 1rem;
-            border: 1px solid #ccc;
-            background-color: #f8f9fa;
-            cursor: pointer;
-        }
-
-        .dropdown-menu {
-            position: absolute;
-            top: 100%;
-            left: 0;
-            display: none;
-            background-color: #fff;
-            border: 1px solid #ccc;
-            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
-            z-index: 1000;
-        }
-
-        .dropdown-menu a {
-            display: block;
-            padding: 0.5rem 1rem;
-            color: #333;
-            text-decoration: none;
-        }
-
-        .dropdown-menu a:hover {
-            background-color: #f1f1f1;
-        }
-
-        .dropdown:hover .dropdown-menu {
-            display: block;
-        }
-
-        .stat-card {
-            border: 1px solid #ccc;
-            padding: 1rem;
-            margin: 0.5rem 0;
-            border-radius: 8px;
-        }
-
-        .stat-card h5 {
-            margin-bottom: 0.5rem;
-        }
-
-        .cont {
-            margin: 2rem 0;
-        }
-
-        .upper-images,
-        .lower-image {
-            display: flex;
-            gap: 10px;
-        }
-
-        .image {
-            flex-grow: 1;
-        }
-
-        .image-60 {
-            flex: 0 0 60%;
-        }
-
-        .image-30 {
-            flex: 0 0 30%;
-        }
-
-        .image img {
-            width: 100%;
-            height: auto;
-            border-radius: 10px;
-        }
-
-        .lower-image img {
-            width: 100%;
-            height: auto;
-            border-radius: 10px;
-        }
-
-        .image-container {
-            text-align: center;
-        }
-
-        .image-container img {
-            width: 100%;
-            height: auto;
-            border-radius: 15px;
-        }
-
-        .image-text {
-            margin-bottom: 0.5rem;
-            font-weight: bold;
-        }
-
-        @media (max-width: 768px) {
-            .upper-images,
-            .lower-image {
-                flex-direction: column;
-            }
-
-            .image-60,
-            .image-30 {
-                flex: 1 1 100%;
-            }
-        }
-    </style>
-    </style>
-    <div class="container dashboard_head">
-        <h1>Dashboard</h1>
-        <div>
-            <div class="dropdown" >
-                <button type="button" style="padding:5px 40px;">Category</button>
-                <div class="dropdown-menu">
+  
+    <header class="header">
+        <div class="header-left">
+            <h1>Dashboard</h1>
+        </div>
+        <div class="header-right">
+            <div class="dropdown">
+                <button class="dropdown-button">Categories</button>
+                <div class="dropdown-content">
+                    <a href="#">Car</a>
                     <a href="#">Food</a>
-                    <a href="#">Cars</a>
-                    <a href="#">Something else here</a>
                 </div>
             </div>
         </div>
-    </div>
+    </header>
 
+    <div class="grid-container">
+        <div class="grid-item">
+            <h2>Total Sale</h2>
+            <p>PKR 0</p>
+        </div>
+        <div class="grid-item">
+            <h2>Total Orders</h2>
+            <p>0</p>
+        </div>
+        <div class="grid-item">
+            <h2>Avg. Order Value</h2>
+            <p>PKR 0</p>
+        </div>
+        <div class="grid-item">
+            <h2>Cart Abandonment</h2>
+            <p>100.00 %</p>
+        </div>
+    </div>
     <div class="container">
-        <div class="row text-center">
-            <div class="stat-card">
-                <h5>Total Sale</h5>
-                <p>$10,000</p>
+        <!-- Sales vs Orders Section -->
+        <div class="sales-orders">
+            <h2>Sales vs Orders</h2>
+            <p>Data about sales and orders goes here.</p>
+        </div>
+
+        
+        <div class="top-categories">
+            <h2>Top Categories</h2>
+            <ul>
+                <li>Pants 1: 100 Sales</li>
+                <li>Shirts 2: 80 Sales</li>
+                <li>Trouser 3: 50 Sales</li>
+            </ul>
+        </div>
+
+    </div>
+
+    <div 
+    style="width: 95%; height: 150px; border-radius: 5px; display: flex; justify-content: center;
+     background-color: #f4f4f4; margin: auto; ">
+        <p style="padding: 70px;">No Data Found</p>
+    </div>
+
+    <div class="equal-container">
+        <!-- Orders By Day Time Section -->
+        <div class="three_section">
+            <h2>Orders By Day Time</h2>
+            <div class="equal-item">
+                <p>Data about orders by day time goes here.</p>
             </div>
-            <div class="stat-card">
-                <h5>Total Orders</h5>
-                <p>150</p>
+        </div>
+
+
+        <div class="three_section">
+            <h2>Cart Overview</h2>
+            <div class="equal-item">
+                <p>Data about cart overview goes here.</p>
             </div>
-            <div class="stat-card">
-                <h5>Avg. Order Value</h5>
-                <p>$66.67</p>
-            </div>
-            <div class="stat-card">
-                <h5>Cart Abandonment</h5>
-                <p>25%</p>
+        </div>
+
+        <div class="three_section">
+            <h2>Top Areas</h2>
+            <div class="equal-item">
+                <p>Data about top areas goes here.</p>
             </div>
         </div>
     </div>
-
-    <div class="container cont">
-        <div class="upper-images">
-            <div class="image image-60">
-                <img src="https://via.placeholder.com/600x200" alt="Image 1">
-            </div>
-            <div class="image image-30">
-                <img src="https://via.placeholder.com/300x200" alt="Image 2">
-            </div>
-        </div>
-        <div class="lower-image">
-            <img src="https://via.placeholder.com/1200x200" alt="Image 3">
-        </div>
-    </div>
-
-    <section class="mb-3">
-        <div class="container mt-4">
-            <div class="row">
-                <div class="col-md-4">
-                    <div class="image-container">
-                        <div class="image-text">Orders By Day Time</div>
-                        <img src="https://via.placeholder.com/300x200" alt="Image 1">
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="image-container">
-                        <div class="image-text">Cart Overview</div>
-                        <img src="https://via.placeholder.com/300x200" alt="Image 2">           
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="image-container">
-                        <div class="image-text">Top Areas</div>
-                        <img src="https://via.placeholder.com/300x200" alt="Image 3">   
-                    </div>
-                </div>
-            </div>
-        </div>
-    
 </section> 
 
 

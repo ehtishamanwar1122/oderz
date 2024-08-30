@@ -1,0 +1,15 @@
+ <div className='dashboard_body row align-items-center justify-content-center'>
+        <div className="d-flex flex-column justify-content-center col-md-6 content">
+          <h2 className='mb-4 font-weight-bold'>Track your Demo Trades</h2>
+          <p className='text-muted text-justify col-md-9'>
+            Enhance your trading skills without risking actual capital. Our Demo Trader feature allows you to simulate trades using real-time market data, enabling you to place orders and closely monitor your performance. Analyze your trades to identify areas for improvement and build confidence before stepping into the live market.
+          </p>
+          <p className='text-muted text-justify col-md-9'>
+            Experience advanced practice with thorough trade tracking. Demo Trader offers more than just trade simulations—it provides robust analysis tools. Review historical performance data, assess your win/loss ratio, and visualize trade effectiveness through detailed reports. This in-depth insight allows you to refine your strategies and spot profitable trends, ensuring you are well-prepared before committing real capital.
+          </p>
+        </div>
+
+        <div className='image col-md-4 text-center'>
+          <img src={track} alt="Track your trades with our demo" className='img-fluid rounded' />
+        </div>
+      </div>
