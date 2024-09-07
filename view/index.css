@@ -90,7 +90,7 @@ body {
 
 .slider-container {
     width: 100%;
-    max-height: 100vh;
+    max-height: 40vh;
     max-width: 600px;
     margin: 0 auto;
     overflow: hidden;
@@ -356,8 +356,9 @@ body {
 }
 
 .card-title {
-    font-size: 18px;
+    font-size: 14px;
     margin: 0;
+    font-weight: 200;
 }
 
 .card-price {
@@ -402,80 +403,90 @@ body {
     font-size: 14px;
 }
 
- /* Responsive CSS */
 
-/* Adjust hero section padding on smaller screens */
 @media (max-width: 768px) {
-    .hero-section {
-        padding: 20px 10px;
+    .header {
+        padding: 20px;
+        flex-direction: column;
+        align-items: center;
     }
 
-    .product-name h1 {
-        font-size: 24px;
-        margin-bottom: 15px;
+    .logo_container {
+        padding-left: 0;
+    }
+
+    .navbar {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .nav-link {
+        font-size: 14px;
+        margin-bottom: 10px;
+    }
+
+    .slider img {
+        max-height: 50vh;
     }
 
     .card-container {
         flex-direction: column;
-        gap: 15px;
+        gap: 20px;
     }
 
     .card {
-        flex-direction: column;
-        max-width: 100%;
-        height: auto;
-    }
-
-    .card-content {
-        width: 100%;
-        padding: 10px;
-        text-align: center;
-    }
-
-    .card-image {
         width: 100%;
     }
 
-    .card-price {
-        font-size: 14px;
-    }
-
-    .card-title {
-        font-size: 16px;
-    }
-
-    .card-price i {
-        padding-top: 5px;
+    .card-image img {
+        width: 100%;
     }
 }
 
-
+/* Mobile View */
 @media (max-width: 480px) {
-    .product-name h1 {
-        font-size: 20px;
-        margin-bottom: 10px;
+    .header {
+        padding: 10px;
     }
 
-    .card-content {
-        padding: 8px;
+    .navbar {
+        padding: 10px;
     }
 
-    .card-price {
+    .nav-link {
         font-size: 12px;
+        margin-right: 5px;
     }
 
-    .card-title {
-        font-size: 14px;
+    .cart-icon {
+        font-size: 18px;
+    }
+
+    .cart-btn {
+        padding: 5px;
+    }
+
+    .slider img {
+        max-height: 40vh;
+    }
+
+    .card-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .card {
+        width: 100%;
+        max-width: 350px;
+    }
+
+    .hero-section {
+        padding: 20px 10px;
     }
 
     .footer {
         flex-direction: column;
+        align-items: center;
         text-align: center;
-        padding: 10px;
-    }
-
-    .footer-left, .footer-right {
-        font-size: 12px;
-        margin: 5px 0;
     }
 }
