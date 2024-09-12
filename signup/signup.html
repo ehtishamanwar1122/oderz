@@ -1,44 +1,78 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sign Up</title>
-    <link rel="stylesheet" href="./style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sign Up | ORDRZ for Business</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="container">
-        <div class="form-container">
-            <div class="logo">
-                <img src="./ordrx.PNG" alt="ORDRZ for Business Logo">
-                <h2>Sign Up</h2>
-                <p>Fill out the form below to create an account</p>
-            </div>
-            <form>
-                <div class="business-details">
-                    <input type="text" placeholder="Business Name">
-                    <div class="url-container">
-                        <input type="text" placeholder="Website URL">
-                        <span>.ordrz.com</span>
-                    </div>
-                    <input type="text" placeholder="Country">
-                    <input type="text" placeholder="City">
-                </div>
-                <div class="personal-details">
-                    <input type="text" placeholder="Full Name">
-                    <input type="email" placeholder="Email">
-                    <input type="tel" placeholder="Phone #">
-                    <input type="password" placeholder="Password">
-                    <input type="password" placeholder="Confirm Password">
-                </div>
-                <button type="submit">Sign Up</button>
-            </form>
-            <p class="login-link">Already have an account? <a href="#">Sign In</a></p>
-            <p class="footer">Powered by ordrz.com</p>
+  <div class="signup-container">
+    <div class="form-section">
+      <div class="logo">
+        <img src="./ordrx.PNG " alt="ORDRZ Logo">
+      </div>
+      <h2>Sign Up</h2>
+      <p>Fill out the form below to create an account</p>
+
+      <form action="#" method="POST">
+        <h5>Business Details</h5>
+        <div class="form-group">
+          <input type="text" id="business-name" name="business-name" placeholder="Business Name">
         </div>
-        <div class="image-container">
-            <img src="/images/singup.webp" alt="Sign Up Image">
+        <div class="input-group">
+            <input type="text" placeholder="Website URL">
+            <span class="input-group-text">.ordrz.com</span>
         </div>
+        
+        <div class="inline-group" >
+          <div class="form-group">
+            <select id="country" name="country">
+              <option value="">Select Country</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <select id="city" name="city">
+              <option value="" >Select City</option>
+            </select>
+          </div>
+        </div>
+
+        <h5>Personal Details</h5>
+        <div class="form-group">
+            <input type="name" id="password" name="name" placeholder="Full Name">
+         </div>
+  
+        <div class="inline-group">
+          <div class="form-group">
+            <input type="email" id="email" name="email" placeholder="Email">
+          </div>
+          <div class="form-group">
+            <input type="tel" id="phone" name="phone" placeholder="Phone #">
+          </div>
+        </div>
+
+        <div class="form-group">
+          <input type="password" id="password" name="password" placeholder="Password">
+        </div>
+
+        <div class="form-group">
+          <input type="password" id="confirm-password" name="confirm-password" placeholder="Confirm Password">
+        </div>
+
+        <button type="submit" class="signup-btn">Sign Up</button>
+
+        <p>Already have an account? <a href="#">Sign In</a></p>
+      </form>
+
+      <footer>
+        <p>Powered by ordrz.com</p>
+      </footer>
     </div>
+    
+    <div class="image-section">
+      <img src="./Signup Side Image.webp" alt="Signup Banner">
+    </div>
+  </div>
 </body>
 </html>

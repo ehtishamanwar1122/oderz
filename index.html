@@ -86,10 +86,10 @@
             <p>Clearly display your menu items along with descriptions, images and prices</p>
             <h2>Features</h2>
             <ul>
-                <li><i class="fa-solid fa-circle-check"></i> Detailed Option Builder</li>
-                <li><i class="fa-solid fa-circle-check"></i>Analytics & Customer INsights</li>
-                <li><i class="fa-solid fa-circle-check"></i>Secure Online Payments</li>
-                <li><i class="fa-solid fa-circle-check"></i> Seamless POS Integration </li>
+                <li>Detailed Option Builder</li>
+                <li>Analytics & Customer INsights</li>
+                <li>Secure Online Payments</li>
+                <li> Seamless POS Integration </li>
             </ul>
             <a href="#">Learn More</a>
         </div>
@@ -151,7 +151,7 @@
         <div class="image-section">
             <img src="./images/photo4.webp" alt="">
         </div>
-     </div>\
+     </div>
 
      <!-- sudais -->
 
@@ -161,7 +161,8 @@
             width: 100%;
             margin-bottom: 50px;
             background: #323232;
-            padding: 45px 0px 10px 0px;
+            padding: 4px 0px 10px 0px;
+            margin-top: 20px;
         }
         .custom_container {
             max-width: 1140px;
@@ -195,6 +196,7 @@
         letter-spacing: 0px;
         text-align: center;
         color: #C5FF60;
+        margin-bottom: 0px;
         }
         .custom_section_3_btn a {
           font-family: Inter;
@@ -209,6 +211,7 @@
             justify-content: center;
             text-transform: uppercase;
             text-decoration: underline;
+            padding-bottom: 40px;
         }
         .custom_section_3_btn a:hover{
             color: #fff;
@@ -320,28 +323,28 @@ display: flex;
     display: flex;
     width: 100%;
     justify-content: center;
-flex-direction: column;
+    flex-direction: column;
   }
   .section_1_single_box_heading h4 {
-margin: 0px;
-font-family: Poppins;
-font-size: 20px;
-font-weight: 700;
-line-height: 30px;
-letter-spacing: 0px;
-color: #111827;
-text-transform: capitalize;
-
-    padding-bottom: 19px;
+        margin: 0px;
+        font-family: Poppins;
+        font-size: 20px;
+        font-weight: 700;
+        
+        letter-spacing: 0px;
+        color: #111827;
+        text-transform: capitalize;
+         padding-bottom: 0px;
   }
   .section_1_single_box_heading p{
-font-family: Inter;
-font-size: 16px;
-font-weight: 400;
-line-height: 24px;
-letter-spacing: 0px;
-text-align: left;
-color: #111827;
+        font-size: 15px;
+        font-weight: 400;
+        line-height: 24px;
+        letter-spacing: 0px;
+        text-align: justify;
+        color: #111827;
+        margin-top: 10px;
+        max-width: 100%;
 }
 
   @media  (max-width: 1024px) {
@@ -515,17 +518,23 @@ gap: 10px 10px;
     .integration-images {
         display: flex;
         width: 100%;
-    margin-bottom: 20px;
-    justify-content: center;
+        margin-bottom: 20px;
+        justify-content: center;
     }
     .section-images {
         width: 125px;
         height: 80px;
         display: flex;
-    margin: 0px 30px;
+        margin: 0px 30px;
         justify-content: center;
         align-items: center;
-    border-radius: 6px;
+        border-radius: 6px;
+    }
+     #jazz{
+        max-width: 40%;
+       img{
+        max-width: 100%;
+       } 
     }
     
             
@@ -538,14 +547,14 @@ gap: 10px 10px;
                  }
                
                  .home_page_banner_figcaption_two h4 {
-     font-family: 'Poppins';
-    font-style: normal;
-    font-weight: 800;
-    font-size: 50px;
-    line-height: 140%;
-    color: #111827;
+                font-family: 'Poppins';
+                font-style: normal;
+                font-weight: 800;
+                font-size: 53px;
+                line-height: 140%;
+                color: #111827;
     
-                  padding-bottom: 30px;
+                  padding-bottom: 0px;
                  margin:0px;
                  }
                 
@@ -565,22 +574,24 @@ gap: 10px 10px;
                  .home_page_banner_figcaption_two_btn{
                      display: flex;
                      align-items: center;
+                     
                  }
                  .home_page_banner_figcaption_two_btn a {
                        display: flex;
                      align-items: center;
                     width: 194px;
-    height: 48px;
-    background: #111827;
-    border-radius: 6px;
-                     justify-content: center;
-                     font-family: 'Inter';
-    font-style: normal;
-    font-weight: 600;
-    font-size: 14px;
-    line-height: 20px;
-    text-align: center;
-    color: #FFFFFF;
+                    text-decoration: none;
+                    height: 48px;
+                    background: #111827;
+                    border-radius: 6px;
+                    justify-content: center;
+                    font-family: 'Inter';
+                        font-style: normal;
+                        font-weight: 600;
+                        font-size: 14px;
+                        line-height: 20px;
+                        text-align: center;
+                        color: #FFFFFF;
                  }
                 
                  @media (max-width: 1024px){
@@ -723,8 +734,8 @@ gap: 10px 10px;
     <div class="section-images"><img src="./images/d3a661e9-9dca-4e24-ad45-192d346f495b.webp"></div>
     </div>
     <div class="integration-images">
-    <div class="section-images"><img src="./images/30d98b5c-3e4c-404d-a0e4-b9a1dceba48d.webp"></div>
-    <div class="section-images"><img src="./images/59b047d1-344f-4633-92a5-148423d53b3b.webp"></div>
+    <div class="section-images" id="jazz"><img src="./images/30d98b5c-3e4c-404d-a0e4-b9a1dceba48d.webp"></div>
+    <div class="section-images "><img src="./images/59b047d1-344f-4633-92a5-148423d53b3b.webp"></div>
     </div>
     </div>
     </div>
@@ -989,8 +1000,7 @@ line-height: 27px;
                 font-family: "Poppins", sans-serif !important;
             }
     
-            .footer-section {
-                
+            .footer-section {  
                 background: #000000;
                 color: #fff;
                 float: left;
@@ -1005,8 +1015,8 @@ line-height: 27px;
                 }
 
                 .footer-data-box-detail {
-                    flex: 2 1 1 2; 
-                    max-width: calc(25% - 10px); 
+                    flex: 2 2 1 2; 
+                    max-width: calc(30% - 10px ); 
                 }
 
             .footer-detail-box-one {
@@ -1028,12 +1038,12 @@ line-height: 27px;
     
             .footer-detail-box-one p {
                 font-family: Inter;
-                font-size: 16px;
+                font-size: 15px;
                 font-weight: 400;
                 line-height: 23px;
                 letter-spacing: 0.20000000298023224px;
                 text-align: justify;
-              
+                font-family: 'Poppins', sans-serif;
             }
     
             .footer-socail-links {
@@ -1061,7 +1071,8 @@ line-height: 27px;
             .footer-detail-box-two {
                 display: flex;
                 flex-direction: column;
-                width: 100%;
+                padding-left: 30px;
+                max-width: 100%;
             }
     
             .footer-detail-box-heading {
@@ -1087,11 +1098,14 @@ line-height: 27px;
                 padding: 0px !important;
                 margin: 0px !important;
             }
-    
+            .footer-detail-box-content-list-company{
+                margin-left: -20px;
+            }
             .footer-detail-box-content-list li {
                 list-style: none;
                 display: flex;
                 align-items: center;
+
                 padding-bottom: 24px;
             }
     
@@ -1101,7 +1115,7 @@ line-height: 27px;
     
             .footer-detail-box-content-list li a {
                 font-family: Inter;
-                font-size: 16px;
+                font-size: 16px !important;
                 font-weight: 400;
                 line-height: 19px;
                 letter-spacing: 0.20000000298023224px;
@@ -1141,8 +1155,7 @@ line-height: 27px;
             }
     
             .footer-contact-list li a {
-                font-family: Inter;
-                font-size: 16px;
+                font-size: 18px;
                 font-weight: 400;
                 line-height: 19px;
                 letter-spacing: 0.20000000298023224px;
@@ -1155,29 +1168,30 @@ line-height: 27px;
             .footer_newsletter_section {
                 display: flex;
                 flex-direction: column;
+                margin-left: -10%;
             }
     
             .footer_newsletter_section h3 {
                 margin: 0px !important;
-                font-family: Inter;
                 font-size: 20px !important;
                 line-height: 26px;
                 letter-spacing: 0px;
                 text-align: left;
                 color: #C5FF60;
-                padding-bottom: 30px;
+                padding-bottom: 10px;
                 font-weight: 600;
             }
     
             .footer_newsletter_section p {
-                font-family: Inter;
-                font-size: 16px;
+                font-size: 16px !important;
                 font-weight: 400;
                 line-height: 19px;
                 letter-spacing: 0em;
                 text-align: left;
                 color: #fff;
-                padding-bottom: 21px;
+                padding-bottom: 1px;
+                
+                
             }
     
             .footer_newsletter_form_fields_content {
@@ -1185,9 +1199,26 @@ line-height: 27px;
                 height: 48px;
                 width: 100%;
                 margin-bottom: 10px;
-                max-width: 100%;
+                max-width: 97%;
                 margin: 0 auto;
+                float: left;
                 
+            }
+            .footer-detail-box-one p,
+            .footer-detail-box-heading h3,
+            .footer-detail-box-content-list li a,
+            .footer_newsletter_section p,
+            .footer_newsletter_section h3 {
+                font-family: 'Poppins', sans-serif; 
+                text-align: left; 
+            }
+            .footer-newsletter-form-fields-content input::placeholder {
+                font-family: "Poppins", sans-serif;
+            }
+
+            .footer-newsletter-form-fields-content button,
+            .footer-newsletter-form-fields-content button i {
+                font-family: "Poppins", sans-serif;
             }
     
             .footer_newsletter_form_fields_content input {
@@ -1204,7 +1235,7 @@ line-height: 27px;
                 border-radius: 4px;
                 background: #E5E7EB;
                 box-shadow: 0px 6px 12px -6px #FFFFFF1F;
-                font-family: Poppins;
+         
             }
     
             .footer_newsletter_form_fields_content input:focus-visible {
@@ -1212,7 +1243,7 @@ line-height: 27px;
             }
     
             .footer_newsletter_form_fields_content input::placeholder {
-                font-family: Poppins;
+                
                 font-style: normal;
                 font-weight: 400;
                 font-size: 13px;
@@ -1227,17 +1258,17 @@ line-height: 27px;
                 border: unset;
                 position: absolute;
                 content: "";
-                top: 5.5px;
+                top: 4px;
                 right: 6px;
                 display: flex;
                 align-items: center;
                 justify-content: center;
                 height: 36px;
-                padding: 2px;
+                padding: 22px !important;
                 font-family: Inter;
                 font-style: normal;
                 font-weight: 500;
-                font-size: 14px;
+                font-size: 16px;
                 line-height: 17px;
                 background: #000;
                 border-radius: 2px;
@@ -1427,10 +1458,10 @@ line-height: 27px;
             </div>
             <div class="footer-data-box-detail">
             <div class="footer-detail-box-two">
-            <div class="footer-detail-box-heading accordion modtitle">
+            <div class="footer-detail-box-heading accordion modtitle footer-detail-box-content-list-company">
             <h3 class="footer-collapse-icons">Company</h3>
             </div>
-                    <div class="modcontent panel">
+                    <div class="modcontent panel footer-detail-box-content-list-company">
                         <ul class="footer-detail-box-content-list">
                             <li><a href="ordrz.html">Home</a></li>
                             <li><a href="talk-to-us.html">Talk to us</a></li>

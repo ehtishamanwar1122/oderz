@@ -1,109 +1,187 @@
-body {
+* {
     margin: 0;
     padding: 0;
-    font-family: Arial, sans-serif;
-    background-color: #fff;
-}
-
-.container {
-    display: flex;
-    height: 100vh;
-}
-
-.form-container {
-    width: 55%; 
-    padding: 50px;
     box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+  }
+  
+  .signup-container {
     display: flex;
-    flex-direction: column;
-    justify-content: center; 
-    align-items: center; 
-}
-
-.image-container {
-    width: 45%; 
-}
-
-.image-container img {
+    min-height: 100vh;
+  }
+  
+  .form-section {
+    flex: 1;
+    padding: 20px;
+    background-color: #fff;
+    max-width: 45%;
+    margin-right: auto;
+    overflow-y: auto;  
+    height: 100vh;    
+  }
+  
+  .image-section {
+    position: fixed;
+    top: 0;
+    right: 0;        
+    width: 55%;       
+    height: 100vh;     
+    overflow: hidden;
+  }
+  
+  .image-section img {
     width: 100%;
     height: 100%;
-    object-fit: cover;
-}
-
-.logo {
-    text-align: center; 
-}
-
-.logo img {
-    width: 150px;
-    margin-bottom: 20px;
-}
-
-h2 {
+    object-fit: cover; 
+  }
+  
+  .logo img {
+    display: block;
+    max-width: 150px;
+    margin: 10px auto;
+  }
+  
+  h2 {
+    text-align: center;
+    font-size: 36px;
     margin-bottom: 10px;
-    font-size: 24px;
-    color: #333;
-    text-align: center; 
-}
-
-p {
-    margin-bottom: 20px;
-    color: #777;
-    text-align: center; 
-}
-
-form {
-    width: 100%; 
-    max-width: 500px; 
-    display: flex;
-    flex-direction: column;
-}
-
-input[type="text"], input[type="email"], input[type="tel"], input[type="password"] {
-    padding: 10px;
+  }
+  
+  p {
+    text-align: center;
+    margin: 30px;
+    font-size: 14px;
+    color: #666;
+  }
+  
+  .form-group {
     margin-bottom: 15px;
+  }
+  
+  .form-group input,
+  .form-group select {
+    width: 100%;
+    padding: 12px;
     border: 1px solid #ccc;
     border-radius: 5px;
-    width: 100%; /* Full-width inputs */
-    box-sizing: border-box;
-}
-
-.url-container {
+    font-size: 16px;
+    margin: 5px 0;
+  }
+  
+  .input-group {
     display: flex;
-    align-items: center;
-}
-
-.url-container span {
-    margin-left: 10px;
-}
-
-button {
+    margin-bottom: 10px;
+  }
+  
+ 
+.input-group input {
+    flex: 1;
     padding: 15px;
-    background-color: #ff0066;
-    color: #fff;
+    border: 1px solid #ccc;
+    border-right: none;
+    border-radius: 5px 0 0 5px;
+   
+}
+.input-group-text {
+    background-color: #ffffff;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-left: none;
+    border-radius: 0 5px 5px 0;
+    color: #000000;
+}
+  
+  .signup-btn {
+    display: block;
+    width: 100%;
+    padding: 15px;
+    background-color: #ff4b7e;
+    color: white;
     border: none;
     border-radius: 5px;
+    font-size: 18px;
+    margin-top: 10px;
     cursor: pointer;
+  }
+  
+  .signup-btn:hover {
+    background-color: #e64570;
+  }
+  
+  .inline-group {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+  }
+  h5{
+    margin-bottom: 10px;
+    font-size: 12px;
+    padding-left: 10px;
+    color: #948f8f;
+  }
+  
+  .inline-group .form-group {
+    flex: 1;
+  }
+  .inline-group .form-group select {
+    color:#9e9999;
+    font-size: 14px;
+  }
+  footer {
+    text-align: center;
+    font-size: 12px;
     margin-top: 20px;
-    width: 100%; /* Full-width button */
-}
-
-button:hover {
-    background-color: #e6005c;
-}
-
-.login-link {
-    margin-top: 20px;
-    text-align: center; /* Center align the login link */
-}
-
-.login-link a {
-    color: #ff0066;
+  }
+  
+  footer p {
+    color: #999;
+  }
+  
+  a {
+    color: #ff4b7e;
     text-decoration: none;
-}
-
-.footer {
-    margin-top: 30px;
-    color: #777;
-    text-align: center; /* Center align the footer */
-}
+  }
+  input::placeholder {
+    color: #666666dd;
+    font-size: 14px;
+  }
+  @media (min-width: 768px) {
+    .signup-container {
+      flex-direction: row;
+    }
+  
+    .form-section {
+      max-width: 45%;
+    }
+  
+    .image-section {
+      width: 55%;
+      height: 100vh;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .image-section {
+      height: 200px;
+    }
+  
+    .logo img {
+      max-width: 100px;
+    }
+  
+    h2 {
+      font-size: 20px;
+    }
+  
+    .signup-btn {
+      font-size: 14px;
+    }
+  
+    .inline-group {
+      flex-direction: column;
+    }
+  }

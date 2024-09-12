@@ -11,18 +11,19 @@ body {
 }
 
 .form-container {
-    width: 50%; /* Width of the form container */
+    width: 50%; 
     padding: 50px;
     box-sizing: border-box;
     display: flex;
     flex-direction: column;
-    justify-content: center; /* Center content vertically */
-    align-items: center; /* Center content horizontally */
+    justify-content: center; 
+    align-items: center; 
 }
 
 .image-container {
-    width: 50%; /* Width of the image container */
-}
+    width: 50%;
+ }
+
 
 .image-container img {
     width: 100%;
@@ -31,7 +32,7 @@ body {
 }
 
 .logo {
-    text-align: center; /* Center align the logo and text */
+    text-align: center; 
 }
 
 .logo img {
@@ -43,15 +44,17 @@ h2 {
     margin-bottom: 10px;
     font-size: 24px;
     color: #333;
-    text-align: center; /* Center align the heading */
+    text-align: center; 
 }
 
 p {
     margin-bottom: 20px;
     color: #777;
-    text-align: center; /* Center align the paragraph */
+    text-align: center;
 }
-
+.login-link p{
+    font-size: 14px;
+}
 form {
     width: 100%; /* Make the form full-width within the container */
     max-width: 400px; /* Set a max-width for better appearance */
@@ -60,11 +63,11 @@ form {
 }
 
 input[type="email"], input[type="password"] {
-    padding: 10px;
+    padding: 15px;
     margin-bottom: 15px;
     border: 1px solid #ccc;
     border-radius: 5px;
-    width: 100%; /* Full-width inputs */
+    width: 100%; 
     box-sizing: border-box;
 }
 
