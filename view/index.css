@@ -369,7 +369,10 @@ body {
     justify-content: space-between;
     
 }
-
+.card-description{
+    font-size: 12px;
+    text-align: justify;
+}
 .card-price i {
     margin-left: 8px;
     cursor: pointer;
